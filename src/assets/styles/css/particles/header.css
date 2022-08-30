@@ -1,0 +1,19 @@
+header {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  gap: 10px;
+}
+header ul li {
+  list-style-type: none;
+}
+header ul li a {
+  color: #666;
+}
+
+/*# sourceMappingURL=header.css.map */
