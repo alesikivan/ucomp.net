@@ -1,24 +1,51 @@
-header {
-  border-bottom: 1px solid #ccc;
-  padding: 5px 10px;
+@import '../utils/variables.scss';
+
+.main-header {
+  border-bottom: 1px solid $opacityLineColor;
+  padding: 15px $appPadding;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  h1 {
-
+  .logo {
+    img {
+      height: auto;
+      max-width: 105px;
+    }
   }
+
   ul {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 
     li {
       list-style-type: none;
 
       a {
-        color: #666;
+        color: $textColor;
+        user-select: none;
+        text-transform: capitalize;
+        font-family: 'Bold';
+
+        &:hover {
+          color: $appColor;
+        }
       }
+    }
+  }
+
+  .special-link {
+    background-color: $appColor;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Bold';
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: $blockShahow;
+
+    &:hover {
+      background-color: #6973f9;
     }
   }
 }
