@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Regular','Arial';
+  color: #413f42db;
 }
 
 html,
@@ -22,7 +23,7 @@ body,
 .container {
   flex: 1 0 auto;
   padding: 0 40px;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .footer, .header {
@@ -32,5 +33,6 @@ body,
 a {
   text-decoration: none;
   transition: 0.5s all;
+  user-select: none;
 }
 

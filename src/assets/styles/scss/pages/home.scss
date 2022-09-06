@@ -1,0 +1,66 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+main {
+  .home-info {
+    display: flex;
+    gap: 20px;
+
+    .general-info {
+
+      gap: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .description {
+        font-size: 0.9em;
+      }
+
+      .title {
+        color: $appColor;
+        font-size: 4em;
+        font-family: 'Super-Bold';
+        text-transform: uppercase;
+      }
+
+      .about {
+        font-size: 1.1em;
+      }
+
+      .links {
+        display: flex;
+        gap: 20px;
+
+        a {
+          border-radius: 8px;
+          padding: 15px 70px;
+          color: $appColor;
+          border: 2px solid #0082c7bd;
+          font-family: 'Bold';
+          transition: 0.5s;
+
+          display: block;
+          
+          &.active {
+            background-color: $appColor;
+            color: #fff;
+          }
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+
+    .info-image {
+      img {
+        height: auto;
+        max-width: 600px;
+        border-radius: 15px;
+        box-shadow: 6px 6px 7px #e4e3e3;
+      }
+    }
+  }
+}

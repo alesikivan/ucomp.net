@@ -42,10 +42,9 @@
     font-family: 'Bold';
     color: #fff;
     text-transform: uppercase;
-    box-shadow: $blockShahow;
 
     &:hover {
-      background-color: #6973f9;
+      box-shadow: $blockShahow;
     }
   }
 }

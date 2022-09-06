@@ -1,0 +1,5 @@
+@import './variables.scss';
+
+@mixin box-shadow {
+  box-shadow: $blockShahow;
+}

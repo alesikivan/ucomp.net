@@ -1,0 +1,50 @@
+main .home-info {
+  display: flex;
+  gap: 20px;
+}
+main .home-info .general-info {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main .home-info .general-info .description {
+  font-size: 0.9em;
+}
+main .home-info .general-info .title {
+  color: #0082C7;
+  font-size: 4em;
+  font-family: "Super-Bold";
+  text-transform: uppercase;
+}
+main .home-info .general-info .about {
+  font-size: 1.1em;
+}
+main .home-info .general-info .links {
+  display: flex;
+  gap: 20px;
+}
+main .home-info .general-info .links a {
+  border-radius: 8px;
+  padding: 15px 70px;
+  color: #0082C7;
+  border: 2px solid #0082c7bd;
+  font-family: "Bold";
+  transition: 0.5s;
+  display: block;
+}
+main .home-info .general-info .links a.active {
+  background-color: #0082C7;
+  color: #fff;
+}
+main .home-info .general-info .links a:hover {
+  opacity: 0.7;
+}
+main .home-info .info-image img {
+  height: auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 6px 6px 7px #e4e3e3;
+}
+
+/*# sourceMappingURL=home.css.map */

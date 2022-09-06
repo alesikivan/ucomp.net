@@ -23,19 +23,18 @@
   font-family: "Bold";
 }
 .main-header ul li a:hover {
-  color: #5762ff;
+  color: #0082C7;
 }
 .main-header .special-link {
-  background-color: #5762ff;
+  background-color: #0082C7;
   padding: 5px 10px;
   border-radius: 4px;
   font-family: "Bold";
   color: #fff;
   text-transform: uppercase;
-  box-shadow: -3px -3px 7px #f2f2f2, 3px 3px 7px #c6cace;
 }
 .main-header .special-link:hover {
-  background-color: #6973f9;
+  box-shadow: -3px -3px 7px #e4e3e3, 3px 3px 7px #a8aeb4;
 }
 
 /*# sourceMappingURL=header.css.map */
