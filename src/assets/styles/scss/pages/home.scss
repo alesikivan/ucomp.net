@@ -3,63 +3,112 @@
 
 main {
   .home-info {
-    display: flex;
-    gap: 20px;
+    min-height: calc(100vh - 100px);
+    @include flex;
 
-    .general-info {
-
-      gap: 15px;
+    .cover {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-
-      .description {
-        font-size: 0.9em;
-      }
-
-      .title {
-        color: $appColor;
-        font-size: 4em;
-        font-family: 'Super-Bold';
-        text-transform: uppercase;
-      }
-
-      .about {
-        font-size: 1.1em;
-      }
-
-      .links {
+      gap: 20px;
+  
+      .general-info {
+        gap: 15px;
         display: flex;
-        gap: 20px;
-
-        a {
-          border-radius: 8px;
-          padding: 15px 70px;
+        flex-direction: column;
+        justify-content: space-between;
+  
+        .description {
+          font-size: 0.9em;
+        }
+  
+        .title {
           color: $appColor;
-          border: 2px solid #0082c7bd;
-          font-family: 'Bold';
-          transition: 0.5s;
-
-          display: block;
-          
-          &.active {
-            background-color: $appColor;
-            color: #fff;
-          }
-
-          &:hover {
-            opacity: 0.7;
+          font-size: 4.2em;
+          font-family: 'Super-Bold';
+          text-transform: uppercase;
+        }
+  
+        .about {
+          font-size: 1.2em;
+        }
+  
+        .links {
+          display: flex;
+          gap: 20px;
+  
+          a {
+            border-radius: 8px;
+            padding: 15px 70px;
+            color: $appColor;
+            border: 2px solid #0082c7bd;
+            font-family: 'Bold';
+            transition: 0.5s;
+  
+            display: block;
+            
+            &.active {
+              background-color: $appColor;
+              color: #fff;
+            }
+  
+            &:hover {
+              opacity: 0.7;
+            }
           }
         }
       }
+  
+      .info-image {
+        img {
+          height: auto;
+          max-width: 600px;
+          border-radius: 15px;
+          box-shadow: 6px 6px 7px #e4e3e3;
+        }
+      }
     }
+  }
 
-    .info-image {
+  .home-question {
+    text-align: center;
+    margin: 40px auto;
+    font-family: 'Super-Bold';
+    font-size: 2em;
+    color: $appColor;
+
+    span {
+      color: $appColor;
+      font-family: 'Super-Bold';
+      text-transform: capitalize;
+    }
+  }
+
+  .home-blocks {
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .home-block {
+      width: 47%;
+
+      gap: 15px;
+      @include flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+
+      span {
+        font-size: 0.9em;
+        text-align: center;
+
+        a {
+          font-family: Bold;
+          color: $appColor;
+        }
+      }
+
       img {
         height: auto;
-        max-width: 600px;
-        border-radius: 15px;
-        box-shadow: 6px 6px 7px #e4e3e3;
+        max-width: 100px;
       }
     }
   }

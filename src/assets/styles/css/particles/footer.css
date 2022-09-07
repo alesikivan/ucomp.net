@@ -1,5 +1,6 @@
 footer {
-  border: 1px solid blue;
+  margin-top: 50px;
+  border: 1px solid #ccc;
 }
 footer p {
   color: blue;

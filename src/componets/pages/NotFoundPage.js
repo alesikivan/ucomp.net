@@ -1,7 +1,17 @@
+import { Link } from 'react-router-dom';
+import '../../assets/styles/css/pages/not-found.css'
+
 function NotFoundPage() {
   return (
     <main>
-      <p>Not found #404</p>
+      <div className='error_message'>
+        <span>#404</span>
+        <p>Page Not Found</p>
+      </div>
+
+      <div className='link-block'>
+        <Link to='/'>Home</Link>
+      </div>
     </main>
   );
 }

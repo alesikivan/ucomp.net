@@ -1,30 +1,37 @@
 main .home-info {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+main .home-info .cover {
   display: flex;
   gap: 20px;
 }
-main .home-info .general-info {
+main .home-info .cover .general-info {
   gap: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-main .home-info .general-info .description {
+main .home-info .cover .general-info .description {
   font-size: 0.9em;
 }
-main .home-info .general-info .title {
+main .home-info .cover .general-info .title {
   color: #0082C7;
-  font-size: 4em;
+  font-size: 4.2em;
   font-family: "Super-Bold";
   text-transform: uppercase;
 }
-main .home-info .general-info .about {
-  font-size: 1.1em;
+main .home-info .cover .general-info .about {
+  font-size: 1.2em;
 }
-main .home-info .general-info .links {
+main .home-info .cover .general-info .links {
   display: flex;
   gap: 20px;
 }
-main .home-info .general-info .links a {
+main .home-info .cover .general-info .links a {
   border-radius: 8px;
   padding: 15px 70px;
   color: #0082C7;
@@ -33,18 +40,58 @@ main .home-info .general-info .links a {
   transition: 0.5s;
   display: block;
 }
-main .home-info .general-info .links a.active {
+main .home-info .cover .general-info .links a.active {
   background-color: #0082C7;
   color: #fff;
 }
-main .home-info .general-info .links a:hover {
+main .home-info .cover .general-info .links a:hover {
   opacity: 0.7;
 }
-main .home-info .info-image img {
+main .home-info .cover .info-image img {
   height: auto;
   max-width: 600px;
   border-radius: 15px;
   box-shadow: 6px 6px 7px #e4e3e3;
+}
+main .home-question {
+  text-align: center;
+  margin: 40px auto;
+  font-family: "Super-Bold";
+  font-size: 2em;
+  color: #0082C7;
+}
+main .home-question span {
+  color: #0082C7;
+  font-family: "Super-Bold";
+  text-transform: capitalize;
+}
+main .home-blocks {
+  gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .home-blocks .home-block {
+  width: 47%;
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+main .home-blocks .home-block span {
+  font-size: 0.9em;
+  text-align: center;
+}
+main .home-blocks .home-block span a {
+  font-family: Bold;
+  color: #0082C7;
+}
+main .home-blocks .home-block img {
+  height: auto;
+  max-width: 100px;
 }
 
 /*# sourceMappingURL=home.css.map */
