@@ -1,12 +1,15 @@
 @import '../utils/variables.scss';
 
 .main-header {
+  width: calc(100% - 80px);
+  background-color: #ffffffe8;
   border-bottom: 1px solid $opacityLineColor;
   padding: 15px $appPadding;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 
   .logo {
     img {

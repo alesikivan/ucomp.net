@@ -7,6 +7,10 @@ import team from '../images/pages/home/team.svg';
 import papers from '../images/pages/home/papers.svg';
 import study from '../images/pages/home/study.svg';
 
+import email from '../images/particals/footer/email.svg';
+import location from '../images/particals/footer/location.svg';
+import phone from '../images/particals/footer/phone.svg';
+
 const images = {
   city,
   logo,
@@ -14,7 +18,10 @@ const images = {
   smartCity,
   team,
   papers,
-  study
+  study,
+  email,
+  location,
+  phone
 };
 
 export default images;

@@ -1,9 +1,12 @@
 .main-header {
+  width: calc(100% - 80px);
+  background-color: #ffffffe8;
   border-bottom: 1px solid #cccccc59;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 .main-header .logo img {
   height: auto;

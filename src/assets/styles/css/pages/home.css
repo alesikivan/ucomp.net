@@ -1,5 +1,5 @@
 main .home-info {
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
