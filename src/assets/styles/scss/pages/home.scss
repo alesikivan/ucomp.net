@@ -3,7 +3,8 @@
 
 main {
   .home-info {
-    min-height: 100vh;
+    min-height: calc(100vh - 75px);
+
     @include flex;
 
     .cover {
@@ -36,15 +37,17 @@ main {
           gap: 20px;
   
           a {
+            min-width: 235px;
+            min-height: 54px;
             border-radius: 8px;
-            padding: 15px 70px;
             color: $appColor;
             border: 2px solid #0082c7bd;
             font-family: 'Bold';
             transition: 0.5s;
-  
-            display: block;
-            
+            font-size: 1.1em;
+
+            @include flex;
+
             &.active {
               background-color: $appColor;
               color: #fff;
