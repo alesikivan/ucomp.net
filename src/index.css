@@ -38,3 +38,6 @@ a {
   user-select: none;
 }
 
+input, button {
+  outline: none;
+}
