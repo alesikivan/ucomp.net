@@ -44,6 +44,10 @@
   background: none;
   font-size: 1em;
   font-family: "Bold";
+  transition: 0.4s;
+}
+.page-search button:hover {
+  color: #0082C7;
 }
 
 /*# sourceMappingURL=search.css.map */

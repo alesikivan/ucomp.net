@@ -1,0 +1,63 @@
+@import '../utils/variables.scss';
+
+.team {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+  .member {
+    display: flex;
+    gap: 15px;
+    // background-color: #cccccc36;
+    // padding: 15px;
+    // border-radius: 10px;
+
+    .profile-image {
+      img {
+        height: auto;
+        max-width: 130px;
+        border-radius: 10px;
+        box-shadow: -3px -3px 7px #f2f2f2, 3px 3px 7px #c0c9d2;
+      }
+    }
+
+    .profile-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+
+      .name {
+        font-size: 1.5em;
+        font-family: 'Bold';
+      }
+
+      .job-title {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 13px;
+
+        span {
+          border: 1px solid #413f4269;
+          border-radius: 4px;
+          font-size: 0.9em;
+          padding: 2px 6px;
+        }
+      }
+
+      .description {
+        font-size: 0.9em;
+
+        .more-info {
+          background: none;
+          border: none;
+          cursor: pointer;
+          color: $appColor;
+          font-family: 'Bold';
+        }
+      }
+    }
+  }
+}
