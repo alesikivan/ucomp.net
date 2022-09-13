@@ -26,6 +26,10 @@ main {
           font-size: 4.2em;
           font-family: 'Super-Bold';
           text-transform: uppercase;
+
+          @media (min-width: 1000px) {
+            font-size: 3.2em;
+          }
         }
   
         .about {

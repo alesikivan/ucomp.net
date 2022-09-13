@@ -54,6 +54,7 @@ function Team() {
                 <div className='profile-image'>
                   <img src={member.image} alt='profile'/>
                 </div>
+                
                 <div className='profile-info'>
                   <h2 className='name'>{member.username}</h2>
                   
