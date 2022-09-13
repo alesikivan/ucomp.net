@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import '../../assets/styles/css/pages/team.css'
+import NoResult from '../particles/NoResult'
 import Search from '../particles/Search'
 import Title from '../particles/Title'
 
@@ -18,7 +19,37 @@ function Team() {
       username: 'Prof. Chaogui Kang',
       titles: [ 'Visiting scholar – Associate Professor At Wuhan University' ],
       description: ''
-    }
+    }, 
+    {
+      image: 'https://ucomp.net/wp-content/uploads/2017/12/picture-for-web.png',
+      username: 'Enwei Zhou',
+      titles: [ 'Visiting scholar', 'PhD student at Singhua University, China' ],
+      description: ''
+    }, 
+    {
+      image: 'https://ucomp.net/wp-content/uploads/2017/12/maarten31.jpg',
+      username: 'Maarten Vanhoof',
+      titles: [ 'Visiting scholar', 'PhD student at Newcastle University, UK', 'Associated researcher at Orange Labs, France' ],
+      description: ''
+    }, 
+    {
+      image: 'https://ucomp.net/wp-content/uploads/2017/12/philipp2.png',
+      username: 'Philipp Kats',
+      titles: [ 'Part-time researcher', 'Data scientist at StreetEasy' ],
+      description: ''
+    }, 
+    {
+      image: 'https://ucomp.net/wp-content/uploads/2019/10/Shivam.png',
+      username: 'Shivam Kumar Pathak',
+      titles: [ 'Graduate research assistant' ],
+      description: ''
+    },
+    {
+      image: 'https://ucomp.net/wp-content/uploads/2019/10/Chinmay.jpg',
+      username: 'Chinmay Singhal',
+      titles: [ 'Graduate research assistant' ],
+      description: ''
+    },
   ]
 
   // Flag to display full description
@@ -28,8 +59,9 @@ function Team() {
   })
   
   const [members, setMembersValue] = useState(defaultMembers)
+  const [searchValue, setSearchValue] = useState('')
 
-  function showFullDescription(index) {
+  function toggleDescription(index) {
     const _members = members.map((member, i) => {
       if (i === index) {
         member.hiddenText = !member.hiddenText
@@ -41,15 +73,25 @@ function Team() {
     setMembersValue(_members)
   }
 
+  function membersFinder(searchQuery) {
+    setSearchValue(searchQuery.toLowerCase())
+  }
+
   return (
     <main>
       <Title text="complexity lab team"/>
       <br />
-      <Search placeholder="Search by team"/>
+      <Search 
+        onChangeHandler={membersFinder} 
+        onClickHandler={membersFinder} 
+        placeholder="Search by team"/>
+        
       <article className='team'>
         {
           members.map((member, index) => {
-            return (
+            return member.username
+              .toLowerCase()
+              .includes(searchValue) ?
               <section className='member' key={index}>
                 <div className='profile-image'>
                   <img src={member.image} alt='profile'/>
@@ -70,18 +112,34 @@ function Team() {
                       member.hiddenText ?
                         <>
                           {`${member.description.slice(0, descriptionLimit)}... `}
-                          <button onClick={() => showFullDescription(index)} className='more-info'>more</button>
+                          <button onClick={() => toggleDescription(index)} className='more-info'>more</button>
                         </>
                         :
-                        member.description
+                        <>
+                        { member.description }
+                        {
+                          member.description?.length > descriptionLimit ?
+                          <button onClick={() => toggleDescription(index)} className='more-info'>less</button> 
+                          :
+                          ''
+                        }
+                        </>
                     }
                   </span>
                 </div>
               </section>
-            )
+              :
+              ''
           })
         }
       </article>
+      
+      {
+        !members.some((member) => member.username.toLowerCase().includes(searchValue)) ?
+          <NoResult text="Team members not found" />
+          :
+          ''
+      }
     </main>
   )
 }
