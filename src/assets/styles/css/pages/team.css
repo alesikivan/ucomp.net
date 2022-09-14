@@ -39,12 +39,13 @@
 .team .member .profile-info .description {
   font-size: 0.9em;
 }
-.team .member .profile-info .description .more-info {
+.team .member .profile-info .description .toggle-info {
   background: none;
   border: none;
   cursor: pointer;
   color: #0082C7;
   font-family: "Bold";
+  margin-left: 4px;
 }
 
 /*# sourceMappingURL=team.css.map */

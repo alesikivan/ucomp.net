@@ -41,3 +41,7 @@ a {
 input, button {
   outline: none;
 }
+
+button {
+  user-select: none;
+}

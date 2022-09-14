@@ -51,12 +51,13 @@
       .description {
         font-size: 0.9em;
 
-        .more-info {
+        .toggle-info {
           background: none;
           border: none;
           cursor: pointer;
           color: $appColor;
           font-family: 'Bold';
+          margin-left: 4px;
         }
       }
     }

@@ -73,6 +73,10 @@ function Team() {
     setMembersValue(_members)
   }
 
+  function checkEntries(string1, string) {
+    return string1.toLowerCase().includes(string.toLowerCase())
+  }
+
   function membersFinder(searchQuery) {
     setSearchValue(searchQuery.toLowerCase())
   }
@@ -89,9 +93,7 @@ function Team() {
       <article className='team'>
         {
           members.map((member, index) => {
-            return member.username
-              .toLowerCase()
-              .includes(searchValue) ?
+            return checkEntries(member.username, searchValue) ?
               <section className='member' key={index}>
                 <div className='profile-image'>
                   <img src={member.image} alt='profile'/>
@@ -112,14 +114,14 @@ function Team() {
                       member.hiddenText ?
                         <>
                           {`${member.description.slice(0, descriptionLimit)}... `}
-                          <button onClick={() => toggleDescription(index)} className='more-info'>more</button>
+                          <button onClick={() => toggleDescription(index)} className='toggle-info'>more</button>
                         </>
                         :
                         <>
                         { member.description }
                         {
                           member.description?.length > descriptionLimit ?
-                          <button onClick={() => toggleDescription(index)} className='more-info'>less</button> 
+                          <button onClick={() => toggleDescription(index)} className='toggle-info'>less</button> 
                           :
                           ''
                         }
@@ -135,7 +137,7 @@ function Team() {
       </article>
       
       {
-        !members.some((member) => member.username.toLowerCase().includes(searchValue)) ?
+        !members.some((member) => checkEntries(member.username, searchValue)) ?
           <NoResult text="Team members not found" />
           :
           ''
