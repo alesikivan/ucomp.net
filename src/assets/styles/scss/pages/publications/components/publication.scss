@@ -19,6 +19,11 @@
     font-size: 1.2em;
     color: $appColor;
 
+    &.non-active {
+      color: $textColor;
+      cursor: default;
+    }
+
     .year {
       margin-left: 5px;
     }

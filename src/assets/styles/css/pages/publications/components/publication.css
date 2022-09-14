@@ -15,6 +15,10 @@
   font-size: 1.2em;
   color: #0082C7;
 }
+.publication .description.non-active {
+  color: #413f42db;
+  cursor: default;
+}
 .publication .description .year {
   margin-left: 5px;
 }

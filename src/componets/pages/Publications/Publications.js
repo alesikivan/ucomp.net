@@ -17,7 +17,6 @@ function Publications() {
       desription: 'Redrawing the map of Great Britain from a network of human interactions. PLoS ONE, Vol.12(5), e14248',
       year: 2010,
       authors: ['Ratti C.', 'Sobolevsky S.', 'Calabrese F.', 'Andris C.', 'Reades J.', 'Martino M.', 'Claxton R.', 'Strogatz S.H.'],
-      link: 'http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0014248#pone-0014248-g003'
     },
     {
       desription: 'Quantifying the benefits of vehicle pooling with shareability networks. Proceedings of the National Academy of Sciences (PNAS), 111 (37): 201403657',

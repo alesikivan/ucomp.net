@@ -2,7 +2,11 @@ import '../../../../assets/styles/css/pages/publications/components/publication.
 
 function Publication(props) {
   return <section className='publication'>
-    <a className='description' href={props.publication.link} target='_blank' rel='noreferrer'>
+    <a 
+      className={props.publication?.link ? 'description' : 'description non-active'} 
+      href={props.publication?.link || '#'} 
+      target='_blank' 
+      rel='noreferrer'>
       {props.publication.desription} ({props.publication?.year})
       {/* <span className='year'>{props.publication?.year}</span> */}
     </a>
