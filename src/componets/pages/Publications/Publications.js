@@ -38,9 +38,7 @@ function Publications() {
     }
   ]
 
-  function publicationsFinder(query) {
-    setSearchQuery(query)
-  }
+  const publicationsFinder = query => setSearchQuery(query)
 
   return (
     <main>
@@ -65,7 +63,7 @@ function Publications() {
 
       {
         !publications.some((publication) => checkEntries(publication.authors, searchQuery)) ?
-          <NoResult text='Publication not found' />
+          <NoResult text='Publications not found' />
           :
           ''
       }
