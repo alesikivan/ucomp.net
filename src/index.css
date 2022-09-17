@@ -22,13 +22,20 @@ body,
 
 .container {
   min-height: 100vh;
+  margin: 0 auto;
   margin-top: 61px; /* Header height */
-  flex: 1 0 auto;
   padding: 0 40px;
   padding-top: 20px;
+  align-items: center;
+
+  flex: 1 0 auto;
 }
 
-.footer, .header {
+.container{
+  max-width: 1200px !important;
+}
+
+.main-footer, .main-header {
   flex-shrink: 0;
 }
 
@@ -44,4 +51,8 @@ input, button {
 
 button {
   user-select: none;
+}
+
+ul li {
+  list-style-type: none;
 }

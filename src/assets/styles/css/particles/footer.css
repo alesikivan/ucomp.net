@@ -1,6 +1,6 @@
 .main-footer {
   margin-top: 50px;
-  border: 1px solid #cccccc59;
+  border-top: 1px solid #cccccc59;
   padding: 40px 100px;
   display: flex;
   flex-direction: row;
@@ -9,6 +9,7 @@
 }
 .main-footer .cover {
   width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;

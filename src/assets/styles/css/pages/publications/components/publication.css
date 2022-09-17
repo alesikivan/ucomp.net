@@ -19,6 +19,11 @@
   color: #413f42db;
   cursor: default;
 }
+.publication .description .num {
+  color: inherit;
+  margin-right: 3px;
+  font-family: "Bold";
+}
 .publication .description .year {
   margin-left: 5px;
 }

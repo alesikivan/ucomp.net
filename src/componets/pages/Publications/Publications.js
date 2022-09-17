@@ -54,6 +54,7 @@ function Publications() {
             return checkEntries(publication.authors, searchQuery) ?
                 <Publication 
                   key={index}
+                  index={index}
                   publication={publication} />
                 :
                 ''

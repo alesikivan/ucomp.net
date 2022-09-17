@@ -11,6 +11,10 @@ import email from '../images/particals/footer/email.svg';
 import location from '../images/particals/footer/location.svg';
 import phone from '../images/particals/footer/phone.svg';
 
+import car from '../images/pages/collaborations/car.svg';
+import hierarchical from '../images/pages/collaborations/hierarchical.svg';
+import taxi from '../images/pages/collaborations/taxi.svg';
+
 const images = {
   city,
   logo,
@@ -21,7 +25,10 @@ const images = {
   study,
   email,
   location,
-  phone
+  phone,
+  car,
+  hierarchical,
+  taxi
 };
 
 export default images;

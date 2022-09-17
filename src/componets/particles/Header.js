@@ -6,6 +6,7 @@ import '../../assets/styles/css/particles/header.css';
 function Header() {
   return (
     <header className='main-header'>
+      <div className='cover'>
       <Link to="/" className='logo'>
         <img src={images.logo} alt="logo"/>
       </Link>
@@ -21,14 +22,12 @@ function Header() {
           <Link to="publications">publications</Link>
         </li>
         <li>
-          <Link to="projects">projects</Link>
-        </li>
-        <li>
-          <Link to="about">about</Link>
+          <Link to="collaborations">collaborations</Link>
         </li>
       </ul>
 
       <Link to="contacts" className='special-link'>Contact us</Link>
+      </div>
     </header>
   );
 }

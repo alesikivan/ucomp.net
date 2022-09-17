@@ -7,48 +7,60 @@
   padding: 15px $appPadding;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
 
-  .logo {
-    img {
-      height: auto;
-      max-width: 105px;
-    }
-  }
-
-  ul {
+  .cover {
+    width: 100%;
+    max-width: $maxWidth;
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
 
-    li {
-      list-style-type: none;
+    @media (max-width: $maxWidth) {
+      min-width: auto;
+    }
 
-      a {
-        color: $textColor;
-        user-select: none;
-        text-transform: capitalize;
-        font-family: 'Bold';
-
-        &:hover {
-          color: $appColor;
+    .logo {
+      img {
+        height: auto;
+        max-width: 105px;
+      }
+    }
+  
+    ul {
+      display: flex;
+      gap: 15px;
+  
+      li {
+        list-style-type: none;
+  
+        a {
+          color: $textColor;
+          user-select: none;
+          text-transform: capitalize;
+          font-family: 'Bold';
+  
+          &:hover {
+            color: $appColor;
+          }
         }
       }
     }
-  }
-
-  .special-link {
-    background-color: $appColor;
-    padding: 6px 10px;
-    border-radius: 4px;
-    font-family: 'Bold';
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 0.9em;
-
-    &:hover {
-      box-shadow: $blockShahow;
+  
+    .special-link {
+      background-color: $appColor;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-family: 'Bold';
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 0.9em;
+  
+      &:hover {
+        box-shadow: $blockShahow;
+      }
     }
   }
 }

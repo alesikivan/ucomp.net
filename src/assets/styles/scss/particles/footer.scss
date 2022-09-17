@@ -3,13 +3,14 @@
 
 .main-footer {
   margin-top: 50px;
-  border: 1px solid $opacityLineColor;
+  border-top: 1px solid $opacityLineColor;
   padding: 40px 100px;
 
   @include flex;
 
   .cover {
     width: 100%;
+    max-width: $maxWidth;
 
     display: flex;
     justify-content: space-between;
