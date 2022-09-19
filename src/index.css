@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Regular','Arial';
+  font-family: 'Regular', Arial;
   color: #413f42db;
 }
 
@@ -47,6 +47,7 @@ a {
 
 input, button {
   outline: none;
+  font-family: Arial;
 }
 
 button {

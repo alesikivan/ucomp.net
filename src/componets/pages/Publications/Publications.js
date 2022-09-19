@@ -176,13 +176,18 @@ function Publications() {
     }
   ]
 
+  // function publicationsFinder(query) {
+  //   setSearchQuery(query)
+  // }
+
   const publicationsFinder = query => setSearchQuery(query)
 
   return (
     <main>
       <Title text='Publications' />
       <br />
-      <Search 
+      <Search
+        onClickHandler={publicationsFinder}
         onChangeHandler={publicationsFinder}
         placeholder='Search publications by author' />
 
