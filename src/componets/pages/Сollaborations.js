@@ -105,7 +105,7 @@ function Collaborations() {
                 <h3 className='title-medium'>
                   {info.title}
                   <button className='toggle-info' onClick={() => toggleInfo(index)}>
-                    { info.active ? Parser('&times;') : '+' }
+                    { info.active ? '-' : '+' }
                   </button>
                 </h3>
 
