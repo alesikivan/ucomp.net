@@ -45,13 +45,14 @@ a {
   user-select: none;
 }
 
-input, button {
+input, button, textarea {
   outline: none;
-  font-family: Arial;
+  font-family: 'Regular', Arial;
 }
 
 button {
   user-select: none;
+  cursor: pointer;
 }
 
 ul li {

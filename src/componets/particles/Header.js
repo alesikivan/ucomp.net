@@ -26,7 +26,7 @@ function Header() {
         </li>
       </ul>
 
-      <Link to="contacts" className='special-link'>Contact us</Link>
+      <Link to="contact-us" className='special-link'>Contact us</Link>
       </div>
     </header>
   );
