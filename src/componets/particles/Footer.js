@@ -33,7 +33,7 @@ function Footer() {
               </a>
             </li>          
             <li>
-              <a target='_blank' href={location}>
+              <a target='_blank' rel="noreferrer" href={location}>
                 <img src={images.location} alt='contact'/>
                 <span>{address}</span>
               </a>
