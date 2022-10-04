@@ -7,13 +7,13 @@
   gap: 25px;
 }
 .contact-us-page .preview {
-  font-size: 1em;
+  font-size: 1.1em;
   max-width: 500px;
   text-align: center;
   display: block;
 }
 .contact-us-page .contact-us-form {
-  min-width: 380px;
+  min-width: 420px;
   border: 1px solid #cccccc59;
   border-radius: 4px;
   opacity: hidden;
