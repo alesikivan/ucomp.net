@@ -17,6 +17,7 @@ function Publications() {
       desription: 'Redrawing the map of Great Britain from a network of human interactions. PLoS ONE, Vol.12(5), e14248',
       year: 2010,
       authors: ['Ratti C.', 'Sobolevsky S.', 'Calabrese F.', 'Andris C.', 'Reades J.', 'Martino M.', 'Claxton R.', 'Strogatz S.H.'],
+      link: 'http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0014248#pone-0014248-g003'
     },
     {
       desription: 'Quantifying the benefits of vehicle pooling with shareability networks. Proceedings of the National Academy of Sciences (PNAS), 111 (37): 201403657',
@@ -67,13 +68,13 @@ function Publications() {
       link: 'http://www.sciencedirect.com/science/article/pii/S1389128614000656'
     },
     {
-      desription: '“An analysis of visitors’ behavior in The Louvre Museum: a study using Bluetooth data” Environment and Planning B: Planning and Design 41(6) 1113 – 1131, doi:10.1068/b130047p',
+      desription: '"An analysis of visitors’ behavior in The Louvre Museum: a study using Bluetooth data" Environment and Planning B: Planning and Design 41(6) 1113 – 1131, doi:10.1068/b130047p',
       year: 2014,
       authors: ['Yoshimura Y.', 'Sobolevsky S.', 'Ratti C.', 'Girardin F.', 'Carrascal J. P.', 'Blat J.', 'Sinatra R.'],
       link: 'http://envplan.com/abstract.cgi?id=b130047p'
     },
     {
-      desription: '“Uncovering the Directional Heterogeneity of an Aggregated Mobile Phone Network.” Transactions in GIS 18, no. S1',
+      desription: '"Uncovering the Directional Heterogeneity of an Aggregated Mobile Phone Network." Transactions in GIS 18, no. S1',
       year: 2014,
       authors: ['Tao P.', 'Sobolevsky S.', 'Ratti C.', 'Amini A.', 'Zhou C.'],
       link: ''
@@ -151,6 +152,12 @@ function Publications() {
       link: 'https://arxiv.org/abs/1707.06122'
     },
     {
+      desription: 'Prediction limits of mobile phone activity modelling. Royal Society Open Science, 4(2), 160900.',
+      year: 2017,
+      authors: ['Kondor D.', 'Grauwin S.', 'Kallus Z.', 'Gódor I.', 'Sobolevsky S.', 'Ratti C.'],
+      link: ''
+    },
+    {
       desription: 'Identifying and modeling the structural discontinuities of human interactions. Scientific Reports, 7.',
       year: 2017,
       authors: ['Grauwin S.', 'Szell M.', 'Sobolevsky S. (*corresp.)', 'Hövel P.', 'Simini F.', 'Vanhoof M.', 'Smoreda Z.', 'Barabási A.L.', 'Ratti C.'],
@@ -173,12 +180,56 @@ function Publications() {
       year: 2017,
       authors: ['Sobolevsky S.', 'Belyi A.', 'Ratti C.'],
       link: 'https://arxiv.org/abs/1712.05110'
+    },
+    {
+      desription: 'Inferring hierarchical structure of spatial and generic complex networks through a modeling framework. Presented At NetSci’2018, ICCS’2018.',
+      year: 2017,
+      authors: ['Sobolevsky S.'],
+      link: 'https://arxiv.org/abs/1712.05792'
+    },
+    {
+      desription: 'Deriving human activity from geo-located data by ontological and statistical reasoning. Knowledge-Based Systems, 143, 225-235.',
+      year: 2018,
+      authors: ['Dashdorj Z.', 'Sobolevsky S.', 'Lee S.', 'Ratti C.'],
+      link: 'https://www.sciencedirect.com/science/article/pii/S0950705117305701'
+    },
+    {
+      desription: 'Urban association rules: uncovering linked trips for shopping behavior. Environment and Planning B: Urban Analytics and City Science, 45(2), 367-385.',
+      year: 2018,
+      authors: ['Yoshimura Y.', 'Sobolevsky S.', 'Bautista Hobin J. N.', 'Ratti C.', 'Blat J.'],
+      link: 'https://journals.sagepub.com/doi/abs/10.1177/0265813516676487'
+    },
+    {
+      desription: 'House Price Modeling with Digital Census.',
+      year: 2018,
+      authors: ['Zhu E.', 'Sobolevsky S.'],
+      link: 'https://arxiv.org/abs/1809.03834'
+    },
+    {
+      desription: ' Digital Urban Sensing: A Multi-layered Approach.',
+      year: 2018,
+      authors: ['Zhu E.', 'Khan M.', 'Kats P.', 'Bamne S. S.', 'Sobolevsky S.'],
+      link: 'https://arxiv.org/abs/1809.01280'
+    },
+    {
+      desription: 'Impact Of Bike Sharing In New York City.',
+      year: 2018,
+      authors: ['Sobolevsky S.', 'Levitskaya E.', 'Chan H.', 'Postle M.', 'Kontokosta C.'],
+      link: 'https://arxiv.org/abs/1808.06606'
+    },
+    {
+      desription: 'Anomaly detection in temporal networks. Presented at NetSci’2019, Burlington, VT.',
+      year: 2019,
+      authors: ['Sobolevsky S.'],
+      link: ''
+    },
+    {
+      desription: 'Stationary Spatial Charging Demand Distribution for Commercial Electric Vehicles in Urban Area. To be presented at 2019 IEEE Intelligent Transportation Systems Society Conference, Auckland, New Zealand.',
+      year: 2019,
+      authors: ['Qian X.', 'Xue J.', 'Sobolevsky S.', 'Yang C.', 'Ukkusuri S.'],
+      link: ''
     }
   ]
-
-  // function publicationsFinder(query) {
-  //   setSearchQuery(query)
-  // }
 
   const publicationsFinder = query => setSearchQuery(query)
 
