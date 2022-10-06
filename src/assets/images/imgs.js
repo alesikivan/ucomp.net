@@ -15,6 +15,8 @@ import car from '../images/pages/collaborations/car.svg';
 import hierarchical from '../images/pages/collaborations/hierarchical.svg';
 import taxi from '../images/pages/collaborations/taxi.svg';
 
+import preview from '../images/pages/blogs/preview.svg';
+
 const images = {
   city,
   logo,
@@ -28,7 +30,8 @@ const images = {
   phone,
   car,
   hierarchical,
-  taxi
+  taxi,
+  preview
 };
 
 export default images;

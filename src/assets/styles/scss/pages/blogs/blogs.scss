@@ -1,0 +1,11 @@
+.blogs {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+
+  flex-wrap: wrap;
+  gap: 50px;
+
+  @import './components/blog-item.scss';
+}

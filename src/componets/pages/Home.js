@@ -22,8 +22,8 @@ function Home() {
           </h3>
           
           <div className="links">
-            <Link to='/' className="active">Publications</Link>
-            <Link to='/'>Contacts</Link>
+            <Link to='publications' className="active">Publications</Link>
+            <Link to='team'>Team</Link>
           </div>
         </div>
         <div className="info-image">
@@ -44,7 +44,7 @@ function Home() {
 
         <article className="home-block">
           <span>
-            Our <Link to='/'>papers</Link> are published in top tier journals including Nature’s Scientific Reports, PNAS, Physical Review E, PLjournal.pone.0014248.g001OS ONE, Royal Society Open Science, International Journal Of GIS, Applied Geography, Environment And Planing B, EPJ Data Science and many others and push forward the frontier of the modern science.
+            Our <Link to='publications'>papers</Link> are published in top tier journals including Nature’s Scientific Reports, PNAS, Physical Review E, PLjournal.pone.0014248.g001OS ONE, Royal Society Open Science, International Journal Of GIS, Applied Geography, Environment And Planing B, EPJ Data Science and many others and push forward the frontier of the modern science.
           </span>
           <img src={imgs.papers} alt="home-img"/>
         </article>
@@ -58,14 +58,14 @@ function Home() {
 
         <article className="home-block">
           <span>
-            Our <Link to='/'>team</Link> brings together faculty, researchers and students – goal-oriented, bright and enthusiastic personalities inspired by smart cities and the promise of data science.
+            Our <Link to='team'>team</Link> brings together faculty, researchers and students – goal-oriented, bright and enthusiastic personalities inspired by smart cities and the promise of data science.
           </span>
           <img src={imgs.team} alt="home-img"/>
         </article>
       
         <article className="home-block">
           <span>
-            Our <Link to='/'>projects</Link> on urban mobility, transportation, public safety, urban impact assessments as well as fundamental research in network science, big data and complexity are supported by industrial partners and foundations and help innovating the cities we live in. Our supporters include US Department Of Energy, US Department Of Transportation, National Geospatial Intelligence Agency, Lockheed Martin, Future Cities Catapult, Arcadis.
+            Our <Link to='collaborations'>projects</Link> on urban mobility, transportation, public safety, urban impact assessments as well as fundamental research in network science, big data and complexity are supported by industrial partners and foundations and help innovating the cities we live in. Our supporters include US Department Of Energy, US Department Of Transportation, National Geospatial Intelligence Agency, Lockheed Martin, Future Cities Catapult, Arcadis.
           </span>
           <img src={imgs.support} alt="home-img"/>
         </article>
