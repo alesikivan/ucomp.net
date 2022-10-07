@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   gap: 50px;
 }
+.blogs.preloader-blogs .preview-block {
+  margin: 0;
+}
 .blogs .blog {
   width: 400px;
   padding: 20px;

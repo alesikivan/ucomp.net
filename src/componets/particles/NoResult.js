@@ -1,8 +1,8 @@
 import '../../assets/styles/css/particles/no-result.css'
 
-function NoResult(props) {
+function NoResult({ text = '' }) {
   return <div className='no-result-message'>
-    <span>{props.text}</span>
+    <span>{text}</span>
   </div>
 }
 

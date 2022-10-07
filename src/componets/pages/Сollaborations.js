@@ -101,7 +101,7 @@ function Collaborations() {
         {
           information.map((info, index) => {
             return (
-              <section className='information-block'>
+              <section key={index} className='information-block'>
                 <h3 className='title-medium'>
                   {info.title}
                   <button className='toggle-info' onClick={() => toggleInfo(index)}>
@@ -112,7 +112,7 @@ function Collaborations() {
                 {
                   info.active ?
                     <span className="description special">
-                      {Parser(info.description)}
+                      { Parser(info.description) }
                     </span>
                     :
                     ''
