@@ -13,9 +13,6 @@ function Header() {
 
       <ul>
         <li>
-          <Link to="blogs">blogs</Link>
-        </li>
-        <li>
           <Link to="team">team</Link>
         </li>
         <li>
@@ -23,6 +20,9 @@ function Header() {
         </li>
         <li>
           <Link to="collaborations">collaborations</Link>
+        </li>
+        <li>
+          <Link to="blogs">blogs</Link>
         </li>
       </ul>
 

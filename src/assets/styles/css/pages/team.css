@@ -4,6 +4,9 @@
   flex-direction: column;
   gap: 40px;
 }
+.team.preloader-mode {
+  gap: 0;
+}
 .team .member {
   display: flex;
   gap: 15px;

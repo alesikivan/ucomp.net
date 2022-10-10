@@ -8,7 +8,7 @@ function Publication(props) {
       target='_blank' 
       rel='noreferrer'>
       <b className='num'>{props.index + 1}.</b>
-      {props.publication.desription} ({props.publication?.year})
+      {props.publication.title} ({props.publication?.year})
       {/* <span className='year'>{props.publication?.year}</span> */}
     </a>
 

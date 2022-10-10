@@ -90,6 +90,12 @@
   }
 }
 
+.preloaders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .information-blocks {
   @include flex-column;
   gap: 10px;

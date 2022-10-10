@@ -1,46 +1,55 @@
-import Title from '../particles/Title'
-import images from '../../assets/images/imgs'
-
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 import Parser from 'html-react-parser'
 
+import Title from '../particles/Title'
+import Preloader from '../particles/Preloader'
+import images from '../../assets/images/imgs'
+
+
 import '../../assets/styles/css/pages/collaborations.css'
-import { useState } from 'react'
+
 
 function Collaborations() {  
+  const [collaborations, setCollaborations] = useState([])
+  const [preloader, setPreloader] = useState(true)
+
   const email = 'info@ucomp.net'
 
-  const defaultInformation = [
-    {
-      title: `Call For Collaborators: Ongoing Research Projects At Urban Complexity Group`,
-      description: `Urban Complexity Group has multiple ongoing research projects in theoretic/computational foundations of network science as well as its applications to complex urban systems. We always welcome interest from scholars all over the world to join us in those efforts. We are looking for motivated collaborators at all academic levels: graduate students, post-docs as well as faculty researchers who might be interested in joining our research activities, contributing to their further development beyond the initial proof-of-concept phase, co-authoring resulting research publications or preparing joint funding applications. <br /> <br /> Please find some brief descriptions of our ongoing research activities below. The scope of possible joint research activates is however not limited to those. If interested please feel free to reach out at <a href="mailto:${email}">email</a>. A short statement of interest and a description of your (or your group’s) research profile/background would be a good way to start the conversation.`,
-      active: true
-    },
-    {
-      title: `Complex network representation through multi-dimensional node projection`,
-      description: `Complex network topology might get pretty complicated challenging many network analysis objectives, such as community detection for example. This however makes common emergent network phenomena such as scale-free topology or small-world property even more intriguing. In the present proof-of-concept paper we propose a simple model of network representation inspired by a signal transmission physical analogy, which is apparently capable of reproducing both of the above phenomena. The model appears to be general enough to represent and/or approximate arbitrary complex networks. We propose an approach constructing such a representation by projecting each node into a multi-dimensional space of signal spectrum vectors, where network topology is induced by their overlaps. As one of the implications this enables reducing community detection in complex networks to a straightforward clustering over the projection space, for which multiple efficient approaches are available. We believe such a network representation could turn out to be a useful tool for multiple network analysis objectives. Further details could be found on <a href="${'https://arxiv.org/abs/1806.03687'}">arxiv</a>.`,
-      active: false
-    },
-    {
-      title: `Inferring hierarchical structure of spatial and generic complex networks through a modeling framework`,
-      description: `Our recent paper [Grauwin et al. Sci. Rep. 7 (2017)] demonstrates that community and hierarchical structure of the networks of human interactions largely determines the least and should be taken into account while modeling them. In the present proof-of-concept pre-print the opposite question is considered: could the hierarchical structure itself be inferred to be best aligned with the network model? The inference mechanism is provided for both – spatial networks as well as complex networks in general – through a model based on hierarchical and (if defined) geographical distances. The mechanism allows to discover hierarchical and community structure at any desired resolution in complex networks and in particular – the space-independent structure of the spatial networks. The approach is illustrated on the example of the interstate people migration network in USA. Further details could be found on <a href="${'https://arxiv.org/abs/1712.05792'}">arxiv</a>.`,
-      active: false
-    },
-    {
-      title: `Deep Learning For Network Analysis `,
-      description: `Deep learning proved to be a useful tool for mining pattern in complex data, such as image, video, sound etc. In this project we evaluate utility of deep learning for network analysis, including classification of network topologies, anomaly detection, community detection and other areas.`,
-      active: false
-    },
-  ]
+  useEffect(() => {
+    const getCollaborations = () => {
+      const url = `${process.env.REACT_APP_SERVER_DATA}/collaboration/get`
+      
+      axios(url)
+      .then(content => setCollaborations( addHiddenTextFlag(content.data.collaborations) ))
+      .catch(err => console.error(err))
+      .finally(() => setPreloader(false))
+    }
+    
+    getCollaborations()
+  }, [])
 
-  const [information, setInformation] = useState(defaultInformation)
+  // Flag to display full description
+  function addHiddenTextFlag(collaborations) {
+    const updCollaborations = collaborations.map(member => {
+      member.active = false
+      return member
+    })
+
+    // Make first item always active
+    if (updCollaborations.length > 0) 
+      updCollaborations[0].active = true
+
+    return updCollaborations
+  }
 
   function toggleInfo(index) {
-    const updInformation = information.map((info, i) => {
+    const updCollaborations = collaborations.map((info, i) => {
       info.active = index === i ? !info.active : info.active
       return info
     })
 
-    setInformation(updInformation)
+    setCollaborations(updCollaborations)
   }
 
   return (
@@ -96,32 +105,42 @@ function Collaborations() {
           <li className="area">trajectory mining (project A,C)</li>
         </ul>
       </section>
-      
-      <article className='information-blocks'>
-        {
-          information.map((info, index) => {
-            return (
-              <section key={index} className='information-block'>
-                <h3 className='title-medium'>
-                  {info.title}
-                  <button className='toggle-info' onClick={() => toggleInfo(index)}>
-                    { info.active ? '-' : '+' }
-                  </button>
-                </h3>
 
-                {
-                  info.active ?
-                    <span className="description special">
-                      { Parser(info.description) }
-                    </span>
-                    :
-                    ''
-                }
-              </section>
-            )
-          })
-        }
-      </article>
+      {
+        preloader ? (
+          <div className='preloaders'>
+            <Preloader height='60px' width='65%' />
+            <Preloader height='60px' width='65%' />
+            <Preloader height='60px' width='65%' />
+          </div>
+        ) : (
+          <article className='information-blocks'>
+            {
+              collaborations.map((info, index) => {
+                return (
+                  <section key={index} className='information-block'>
+                    <h3 className='title-medium'>
+                      {info.title}
+                      <button className='toggle-info' onClick={() => toggleInfo(index)}>
+                        { info.active ? '-' : '+' }
+                      </button>
+                    </h3>
+
+                    {
+                      info.active ?
+                        <span className="description special">
+                          { Parser(info.description) }
+                        </span>
+                        :
+                        ''
+                    }
+                  </section>
+                )
+              })
+            }
+          </article>
+        )
+      }
     </main>
   )
 }

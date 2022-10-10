@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
-import imgs from "../../assets/images/imgs";
+import { Link } from "react-router-dom"
+import { LazyLoadImage } from "react-lazy-load-image-component"
 
+import imgs from "../../assets/images/imgs"
 import '../../assets/styles/css/pages/home.css'
 
 function Home() {
@@ -23,11 +24,15 @@ function Home() {
           
           <div className="links">
             <Link to='publications' className="active">Publications</Link>
-            <Link to='team'>Team</Link>
+            <Link to='team'>Team members</Link>
           </div>
         </div>
         <div className="info-image">
-          <img src={imgs.city} alt="city"/>
+          <LazyLoadImage 
+            src={imgs.city}
+            effect="blur"
+            placeholderSrc={imgs.cityCompressed}
+            alt="city"/>
         </div>
         </div>
       </article>

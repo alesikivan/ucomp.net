@@ -1,4 +1,5 @@
 import city from '../images/pages/home/city.svg'
+import cityCompressed from '../images/pages/home/cityCompressed.jpeg'
 import logo from '../images/common/logo.svg'
 
 import support from '../images/pages/home/support.svg'
@@ -18,8 +19,11 @@ import taxi from '../images/pages/collaborations/taxi.svg'
 import preview from '../images/pages/blogs/preview.svg'
 import navigationArrow from '../images/pages/blogs/components/arrow.svg'
 
+import success from '../images/particals/feedback/success.svg'
+
 const images = {
   city,
+  cityCompressed,
   logo,
   support,
   smartCity,
@@ -33,7 +37,8 @@ const images = {
   hierarchical,
   taxi,
   preview,
-  navigationArrow
+  navigationArrow,
+  success
 }
 
 export default images
