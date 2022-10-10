@@ -5,7 +5,7 @@ function BlogItem({ blog }) {
   let navigate = useNavigate()
   
   return (
-    <section onClick={() => navigate('/blogs/' + blog._id)} className='blog'>
+    <section onClick={() => navigate('/blog/' + blog._id)} className='blog'>
       <img 
         className={blog.image === '' ? 'default' : ''}
         src={blog.image ? blog.image : images.preview} 

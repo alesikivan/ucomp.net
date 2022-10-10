@@ -5,11 +5,11 @@
 }
 .blog-page .title {
   max-width: 800px;
+  margin: 20px 0;
   font-size: 1.4em;
   text-align: center;
   font-family: "Bold";
   color: #0082C7;
-  margin-bottom: 20px;
 }
 .blog-page .content {
   width: 100%;

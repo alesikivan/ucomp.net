@@ -21,6 +21,8 @@ body,
 }
 
 .container {
+  max-width: 1200px !important;
+  width: calc(100% - 80px);
   min-height: 100vh;
   margin: 0 auto;
   margin-top: 61px; /* Header height */
@@ -29,11 +31,6 @@ body,
   align-items: center;
 
   flex: 1 0 auto;
-}
-
-.container{
-  max-width: 1200px !important;
-  width: 100%;
 }
 
 .main-footer, .main-header {

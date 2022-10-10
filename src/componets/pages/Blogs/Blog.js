@@ -7,18 +7,27 @@ import NoResult from '../../particles/NoResult'
 import Preloader from '../../particles/Preloader'
 
 import '../../../assets/styles/css/pages/blogs/blog.css'
+import BlogNavigation from './components/BlogNavigation'
 
 function Blog() {
   const [preloader, setPreloader] = useState(true)
+  const [blogNavigation, setBlogNavigation] = useState({ next: null, previos: null })
   const [blog, setBlog] = useState(null)
   const { id } = useParams()
 
   useEffect(() => {
+    setPreloader(true)
+
     const getBlogs = () => {
       const url = `${process.env.REACT_APP_SERVER_DATA}/blog/get/${id}`
 
       axios(url)
-        .then(content => setBlog(content.data))
+        .then(content => {
+          const { blog, next = null, previos = null } = content.data
+          console.log(content.data)
+          setBlog(blog)
+          setBlogNavigation({ next, previos })
+        })
         .catch(err => console.error(err))
         .finally(() => setPreloader(false))
     }
@@ -40,7 +49,10 @@ function Blog() {
           <NoResult text='Can not find the blog.'/>
         ) : (
           <>
+            <BlogNavigation navigation={blogNavigation}/>
+            
             <h1 className='title'>{ blog.title }</h1>
+            
             <section className='content'>
               { Parser(blog.content) }
             </section>

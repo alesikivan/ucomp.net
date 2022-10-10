@@ -17,7 +17,7 @@ function Pages() {
       <Route path="collaborations" element={<Collaborations />} />
       <Route path="publications" element={<Publications />} />
       <Route path="blogs" element={<Blogs />} />
-      <Route path="blogs/:id" element={<Blog />} />
+      <Route path="blog/:id" element={<Blog />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

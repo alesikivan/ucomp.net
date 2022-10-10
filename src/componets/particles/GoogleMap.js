@@ -13,4 +13,4 @@ function GoogleMap() {
   );
 }
 
-export default GoogleMap;
+export default GoogleMap
