@@ -1,4 +1,5 @@
 @import '../utils/variables.scss';
+@import '../utils/mixins.scss';
 
 .team {
   margin-top: 30px;
@@ -62,6 +63,53 @@
           color: $appColor;
           font-family: 'Bold';
           margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .team {
+    .member {
+      .profile-info {
+        .name {
+          font-size: 1.4em;
+        }
+
+        .job-title {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .team {
+    .member {
+      @include flex-column;
+
+      .profile-info {
+        @include flex-column;
+
+        .name {
+          text-align: center;
+        }
+
+        .job-title {
+          justify-content: center;
+
+          span {
+            font-size: 0.8em;
+            text-align: center;
+          }
+        }
+
+        .description {
+          text-align: center;
         }
       }
     }

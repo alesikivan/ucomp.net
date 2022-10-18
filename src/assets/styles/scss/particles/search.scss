@@ -60,3 +60,13 @@
     }
   }
 }
+
+@media (max-width: 490px) {
+  .page-search {
+    min-width: 260px;
+
+    button {
+      display: none;
+    }
+  }
+}

@@ -51,4 +51,13 @@
   color: #0082C7;
 }
 
+@media (max-width: 490px) {
+  .page-search {
+    min-width: 260px;
+  }
+  .page-search button {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=search.css.map */

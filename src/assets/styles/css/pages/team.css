@@ -51,4 +51,42 @@
   margin-left: 4px;
 }
 
+@media (max-width: 1000px) {
+  .team .member .profile-info .name {
+    font-size: 1.4em;
+  }
+  .team .member .profile-info .job-title {
+    gap: 5px;
+  }
+}
+@media (max-width: 600px) {
+  .team .member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .team .member .profile-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .team .member .profile-info .name {
+    text-align: center;
+  }
+  .team .member .profile-info .job-title {
+    justify-content: center;
+  }
+  .team .member .profile-info .job-title span {
+    font-size: 0.8em;
+    text-align: center;
+  }
+  .team .member .profile-info .description {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=team.css.map */

@@ -1,4 +1,5 @@
 @import '../utils/variables.scss';
+@import '../utils/mixins.scss';
 
 .main-header {
   width: calc(100% - 80px);
@@ -62,6 +63,71 @@
   
       &:hover {
         box-shadow: $blockShahow;
+      }
+    }
+
+    .menu-button {
+      display: none;
+    }
+  }
+
+  .burger-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .main-header {
+    padding: 8px 40px;
+    flex-direction: column;
+
+    .cover {
+      ul { 
+        display: none;
+      }
+
+      .special-link {
+        display: none;
+      }
+
+      .menu-button {
+        height: 40px;
+        width: 40px;
+        background: none;
+        border: none; 
+
+        @include flex-column;
+
+        img {
+          height: auto;
+          max-width: 40px;
+        }
+      }
+    }
+
+    .burger-menu {
+      display: flex;
+      margin: 10px 0;
+
+      ul {
+        @include flex-column;
+        gap: 15px;
+    
+        li {
+          list-style-type: none;
+    
+          a {
+            color: $textColor;
+            user-select: none;
+            text-transform: capitalize;
+            font-family: 'Bold';
+            font-size: 1.2em;
+    
+            &:hover {
+              color: $appColor;
+            }
+          }
+        }
       }
     }
   }

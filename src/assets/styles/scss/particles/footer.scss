@@ -64,3 +64,64 @@
     }
   }
 }
+
+@media (max-width: 1050px) {
+  .main-footer {
+    .cover {
+      justify-content: center;
+      .map {
+        display: none;
+      }
+
+      .info {
+        h3, .description {
+          text-align: center;
+        }
+
+        ul {
+          align-items: center;
+
+          li {
+            a {
+              gap: 7px;
+
+              img {
+                max-width: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .main-footer {
+    padding: 40px 10px;
+    
+    .cover {
+      .info {
+        h3 {
+          font-size: 1.5em;
+        }
+
+        ul {
+          li {
+            a {
+              text-align: center;
+              
+              span {
+                color: $appColor;
+              }
+
+              img {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

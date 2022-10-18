@@ -53,5 +53,64 @@
 .main-header .cover .special-link:hover {
   box-shadow: -3px -3px 7px #e4e3e3, 3px 3px 7px #a8aeb4;
 }
+.main-header .cover .menu-button {
+  display: none;
+}
+.main-header .burger-menu {
+  display: none;
+}
+
+@media (max-width: 730px) {
+  .main-header {
+    padding: 8px 40px;
+    flex-direction: column;
+  }
+  .main-header .cover ul {
+    display: none;
+  }
+  .main-header .cover .special-link {
+    display: none;
+  }
+  .main-header .cover .menu-button {
+    height: 40px;
+    width: 40px;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .main-header .cover .menu-button img {
+    height: auto;
+    max-width: 40px;
+  }
+  .main-header .burger-menu {
+    display: flex;
+    margin: 10px 0;
+  }
+  .main-header .burger-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .main-header .burger-menu ul li {
+    list-style-type: none;
+  }
+  .main-header .burger-menu ul li a {
+    color: #413f42db;
+    user-select: none;
+    text-transform: capitalize;
+    font-family: "Bold";
+    font-size: 1.2em;
+  }
+  .main-header .burger-menu ul li a:hover {
+    color: #0082C7;
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

@@ -21,6 +21,9 @@ import navigationArrow from '../images/pages/blogs/components/arrow.svg'
 
 import success from '../images/particals/feedback/success.svg'
 
+import menu from '../images/particals/header/menu.svg'
+import close from '../images/particals/header/close.svg'
+
 const images = {
   city,
   cityCompressed,
@@ -38,7 +41,9 @@ const images = {
   taxi,
   preview,
   navigationArrow,
-  success
+  success,
+  menu,
+  close
 }
 
 export default images
