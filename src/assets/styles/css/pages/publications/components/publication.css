@@ -1,6 +1,6 @@
 .publication {
   margin-bottom: 20px;
-  border-bottom: 1px solid #ccccccad;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.6784313725);
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
   color: #0082C7;
 }
 .publication .description.non-active {
-  color: #413f42db;
+  color: rgba(65, 63, 66, 0.8588235294);
   cursor: default;
 }
 .publication .description .num {

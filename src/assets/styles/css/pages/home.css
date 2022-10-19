@@ -41,7 +41,7 @@ main .home-info .cover .general-info .links a {
   min-height: 54px;
   border-radius: 8px;
   color: #0082C7;
-  border: 2px solid #0082c7bd;
+  border: 2px solid rgba(0, 130, 199, 0.7411764706);
   font-family: "Bold";
   transition: 0.5s;
   font-size: 1.1em;
@@ -102,6 +102,115 @@ main .home-blocks .home-block span a {
 main .home-blocks .home-block img {
   height: auto;
   max-width: 100px;
+}
+
+@media (max-width: 1250px) {
+  main .home-info .cover .general-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .home-info .cover .general-info .description {
+    font-size: 1.1em;
+  }
+  main .home-info .cover .general-info .links {
+    margin-top: 15px;
+  }
+  main .home-info .cover .general-info .links a {
+    min-width: 180px;
+    min-height: 50px;
+    font-size: 1em;
+  }
+  main .home-info .cover .info-image img {
+    display: none;
+  }
+  main .home-blocks .home-block {
+    width: 80%;
+  }
+  main .home-blocks .home-block span {
+    font-size: 1.2em;
+    text-align: center;
+  }
+}
+@media (max-width: 1000px) {
+  main .home-info .cover .general-info .description {
+    font-size: 1em;
+  }
+  main .home-info .cover .general-info .title {
+    font-size: 2.5em;
+  }
+  main .home-info .cover .general-info .about {
+    font-size: 1.2em;
+  }
+  main .home-blocks .home-block {
+    width: 85%;
+  }
+  main .home-blocks .home-block span {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 700px) {
+  main .home-info .cover .general-info .description {
+    font-size: 0.8em;
+  }
+  main .home-info .cover .general-info .title {
+    font-size: 1.85em;
+  }
+  main .home-info .cover .general-info .about {
+    font-size: 0.8em;
+  }
+  main .home-info .cover .general-info .links a {
+    min-width: 135px;
+    min-height: 40px;
+    font-size: 0.8em;
+  }
+  main .home-question {
+    font-size: 1.5em;
+  }
+  main .home-blocks .home-block {
+    width: 85%;
+  }
+  main .home-blocks .home-block span {
+    font-size: 0.9em;
+  }
+  main .home-blocks .home-block img {
+    height: auto;
+    max-width: 70px;
+  }
+}
+@media (max-width: 500px) {
+  main .home-info .cover .general-info .description {
+    font-size: 0.6em;
+  }
+  main .home-info .cover .general-info .title {
+    font-size: 1.6em;
+  }
+  main .home-info .cover .general-info .about {
+    font-size: 0.7em;
+  }
+  main .home-info .cover .general-info .links {
+    margin-top: 8px;
+  }
+  main .home-info .cover .general-info .links a {
+    min-width: 100px;
+    min-height: 30px;
+    font-size: 0.65em;
+  }
+  main .home-question {
+    font-size: 1.3em;
+  }
+  main .home-blocks .home-block {
+    width: 90%;
+  }
+  main .home-blocks .home-block span {
+    font-size: 0.7em;
+  }
+  main .home-blocks .home-block img {
+    max-width: 60px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

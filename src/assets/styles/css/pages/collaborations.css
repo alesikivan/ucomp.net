@@ -111,7 +111,7 @@
 .information-blocks .information-block .title-medium .toggle-info {
   height: 19px;
   width: 19px;
-  background: #0082c7ad;
+  background: rgba(0, 130, 199, 0.6784313725);
   border-radius: 50%;
   border: none;
   font-family: "Bold";
