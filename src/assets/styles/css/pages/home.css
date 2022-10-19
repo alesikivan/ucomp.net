@@ -41,7 +41,7 @@ main .home-info .cover .general-info .links a {
   min-height: 54px;
   border-radius: 8px;
   color: #0082C7;
-  border: 2px solid #0082c7bd;
+  border: 2px solid rgba(0, 130, 199, 0.7411764706);
   font-family: "Bold";
   transition: 0.5s;
   font-size: 1.1em;
