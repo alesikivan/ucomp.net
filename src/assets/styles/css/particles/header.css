@@ -1,7 +1,7 @@
 .main-header {
   width: calc(100% - 80px);
-  background-color: #ffffffe8;
-  border-bottom: 1px solid #cccccc59;
+  background-color: rgba(255, 255, 255, 0.9098039216);
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3490196078);
   padding: 15px 40px;
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@
   list-style-type: none;
 }
 .main-header .cover ul li a {
-  color: #413f42db;
+  color: rgba(65, 63, 66, 0.8588235294);
   user-select: none;
   text-transform: capitalize;
   font-family: "Bold";
@@ -102,7 +102,7 @@
     list-style-type: none;
   }
   .main-header .burger-menu ul li a {
-    color: #413f42db;
+    color: rgba(65, 63, 66, 0.8588235294);
     user-select: none;
     text-transform: capitalize;
     font-family: "Bold";

@@ -9,31 +9,31 @@ function Home() {
     <main>
       <article className="home-info">
         <div className="cover">
-        <div className="general-info">
-          <span className="description">
-            Complex Analytics For Simpler Urban Life
-          </span>
-          
-          <h1 className="title">
-            urban complexity lab
-          </h1>
-          
-          <h3 className="about">
-            We promote potential of data science and complexity to broad audience and the students through teaching and public speaking. Our courses include Applied Data Science, Machine Learning, Network Analysis, Scientific Writing.
-          </h3>
-          
-          <div className="links">
-            <Link to='publications' className="active">Publications</Link>
-            <Link to='team'>Team members</Link>
+          <div className="general-info">
+            <span className="description">
+              Complex Analytics For Simpler Urban Life
+            </span>
+            
+            <h1 className="title">
+              urban complexity lab
+            </h1>
+            
+            <h3 className="about">
+              We promote potential of data science and complexity to broad audience and the students through teaching and public speaking. Our courses include Applied Data Science, Machine Learning, Network Analysis, Scientific Writing.
+            </h3>
+            
+            <div className="links">
+              <Link to='publications' className="active">Publications</Link>
+              <Link to='team'>Team members</Link>
+            </div>
           </div>
-        </div>
-        <div className="info-image">
-          <LazyLoadImage 
-            src={imgs.city}
-            effect="blur"
-            placeholderSrc={imgs.cityCompressed}
-            alt="city"/>
-        </div>
+          <div className="info-image">
+            <LazyLoadImage 
+              src={imgs.city}
+              effect="blur"
+              placeholderSrc={imgs.cityCompressed}
+              alt="city"/>
+          </div>
         </div>
       </article>
 

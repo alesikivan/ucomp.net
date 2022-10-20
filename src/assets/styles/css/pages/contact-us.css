@@ -14,7 +14,7 @@
 }
 .contact-us-page .contact-us-form {
   min-width: 420px;
-  border: 1px solid #cccccc59;
+  border: 1px solid rgba(204, 204, 204, 0.3490196078);
   border-radius: 4px;
   opacity: hidden;
   display: flex;
@@ -31,7 +31,7 @@
 }
 .contact-us-page .contact-us-form input {
   padding: 10px;
-  border-bottom: 1px solid #cccccc59;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.3490196078);
   font-family: "Bold";
 }
 .contact-us-page .contact-us-form textarea {
@@ -39,10 +39,10 @@
   padding-top: 10px;
 }
 .contact-us-page .contact-us-form button {
-  border-top: 1px solid #cccccc59;
+  border-top: 1px solid rgba(204, 204, 204, 0.3490196078);
   padding: 10px 0;
   font-family: "Bold";
-  color: #413f42a3;
+  color: rgba(65, 63, 66, 0.6392156863);
   cursor: not-allowed;
 }
 .contact-us-page .contact-us-form button.active {

@@ -14,7 +14,7 @@
 .feedback-block .title {
   font-family: "Bold";
   font-size: 2.5em;
-  color: #413f42b8;
+  color: rgba(65, 63, 66, 0.7215686275);
 }
 .feedback-block .message {
   max-width: 350px;

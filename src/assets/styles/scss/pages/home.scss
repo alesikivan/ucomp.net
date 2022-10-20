@@ -120,3 +120,196 @@ main {
     }
   }
 }
+
+
+
+
+@media (max-width: 1250px) {
+  main {
+    .home-info {  
+      min-height: 0;
+      margin: 40px 0;
+      margin-top:10px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #cccccc52;
+
+      .cover {    
+        .general-info {
+          @include flex-column;
+          text-align: center;
+
+          .description {
+            font-size: 1.1em;
+          }
+
+          .links {
+            width: 100%;
+            margin-top: 15px;
+
+            @include flex;
+
+            a {
+              min-width: 220px;
+              min-height: 48px;
+              font-size: 1em;
+            }
+          }
+        }
+    
+        .info-image {
+          img {
+           display: none;
+          }
+        }
+      }
+    }
+
+    .home-blocks {
+      .home-block {
+        width: 80%;
+  
+        span {
+          font-size: 1.2em;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  main {
+    .home-info {  
+      .cover {    
+        .general-info {
+          .description {
+            font-size: 1em;
+          }
+
+          .title {
+            font-size: 2.5em;
+          }
+
+          .about {
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+
+
+    .home-blocks {
+      .home-block {
+        width: 85%;
+  
+        span {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  main {
+    .home-info {  
+      .cover {    
+        .general-info {
+          .description {
+            font-size: 0.8em;
+          }
+
+          .title {
+            font-size: 2em;
+          }
+
+          .about {
+            font-size: 0.9em;
+          }
+
+          .links {
+            a {
+              min-width: 200px;
+              min-height: 48px;
+              font-size: 0.8em;
+            }
+          }
+        }
+      }
+    }
+
+
+    .home-question{
+      font-size: 1.5em;
+    }
+
+    .home-blocks {
+      .home-block {
+        width: 85%;
+  
+        span {
+          font-size: 0.9em;
+        }
+  
+        img {
+          height: auto;
+          max-width: 70px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  main {
+    .home-info {  
+      .cover {    
+        .general-info {
+          .description {
+            font-size: 0.8em;
+          }
+
+          .title {
+            font-size: 1.8em;
+          }
+
+          .links {
+            width: 100%;
+            margin-top: 15px;
+
+            @include flex;
+            flex-wrap: wrap;
+
+            a {
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+
+
+    .home-question{
+      font-size: 1.3em;
+    }
+
+    .home-blocks {
+      .home-block {
+        width: 90%;
+  
+        span {
+          font-size: 0.85em;
+        }
+  
+        img {
+          max-width: 60px;
+        }
+      }
+    }
+  }
+}
