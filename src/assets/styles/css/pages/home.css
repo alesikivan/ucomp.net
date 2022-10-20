@@ -105,6 +105,13 @@ main .home-blocks .home-block img {
 }
 
 @media (max-width: 1250px) {
+  main .home-info {
+    min-height: 0;
+    margin: 40px 0;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3215686275);
+  }
   main .home-info .cover .general-info {
     display: flex;
     flex-direction: row;
@@ -117,11 +124,16 @@ main .home-blocks .home-block img {
     font-size: 1.1em;
   }
   main .home-info .cover .general-info .links {
+    width: 100%;
     margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
   main .home-info .cover .general-info .links a {
-    min-width: 180px;
-    min-height: 50px;
+    min-width: 220px;
+    min-height: 48px;
     font-size: 1em;
   }
   main .home-info .cover .info-image img {
@@ -157,14 +169,14 @@ main .home-blocks .home-block img {
     font-size: 0.8em;
   }
   main .home-info .cover .general-info .title {
-    font-size: 1.85em;
+    font-size: 2em;
   }
   main .home-info .cover .general-info .about {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
   main .home-info .cover .general-info .links a {
-    min-width: 135px;
-    min-height: 40px;
+    min-width: 200px;
+    min-height: 48px;
     font-size: 0.8em;
   }
   main .home-question {
@@ -183,21 +195,22 @@ main .home-blocks .home-block img {
 }
 @media (max-width: 500px) {
   main .home-info .cover .general-info .description {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
   main .home-info .cover .general-info .title {
-    font-size: 1.6em;
-  }
-  main .home-info .cover .general-info .about {
-    font-size: 0.7em;
+    font-size: 1.8em;
   }
   main .home-info .cover .general-info .links {
-    margin-top: 8px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   main .home-info .cover .general-info .links a {
-    min-width: 100px;
-    min-height: 30px;
-    font-size: 0.65em;
+    font-size: 1em;
   }
   main .home-question {
     font-size: 1.3em;
@@ -206,7 +219,7 @@ main .home-blocks .home-block img {
     width: 90%;
   }
   main .home-blocks .home-block span {
-    font-size: 0.7em;
+    font-size: 0.85em;
   }
   main .home-blocks .home-block img {
     max-width: 60px;

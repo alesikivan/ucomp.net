@@ -127,6 +127,12 @@ main {
 @media (max-width: 1250px) {
   main {
     .home-info {  
+      min-height: 0;
+      margin: 40px 0;
+      margin-top:10px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #cccccc52;
+
       .cover {    
         .general-info {
           @include flex-column;
@@ -137,11 +143,14 @@ main {
           }
 
           .links {
+            width: 100%;
             margin-top: 15px;
 
+            @include flex;
+
             a {
-              min-width: 180px;
-              min-height: 50px;
+              min-width: 220px;
+              min-height: 48px;
               font-size: 1em;
             }
           }
@@ -154,7 +163,6 @@ main {
         }
       }
     }
-
 
     .home-blocks {
       .home-block {
@@ -216,17 +224,17 @@ main {
           }
 
           .title {
-            font-size: 1.85em;
+            font-size: 2em;
           }
 
           .about {
-            font-size: 0.8em;
+            font-size: 0.9em;
           }
 
           .links {
             a {
-              min-width: 135px;
-              min-height: 40px;
+              min-width: 200px;
+              min-height: 48px;
               font-size: 0.8em;
             }
           }
@@ -263,24 +271,22 @@ main {
       .cover {    
         .general-info {
           .description {
-            font-size: 0.6em;
+            font-size: 0.8em;
           }
 
           .title {
-            font-size: 1.6em;
-          }
-
-          .about {
-            font-size: 0.7em;
+            font-size: 1.8em;
           }
 
           .links {
-            margin-top: 8px;
+            width: 100%;
+            margin-top: 15px;
+
+            @include flex;
+            flex-wrap: wrap;
 
             a {
-              min-width: 100px;
-              min-height: 30px;
-              font-size: 0.65em;
+              font-size: 1em;
             }
           }
         }
@@ -297,7 +303,7 @@ main {
         width: 90%;
   
         span {
-          font-size: 0.7em;
+          font-size: 0.85em;
         }
   
         img {
