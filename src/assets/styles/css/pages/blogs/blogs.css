@@ -43,5 +43,17 @@
   font-family: "Bold";
   font-size: 1em;
 }
+@media (max-width: 600px) {
+  .blogs .blog img {
+    height: auto;
+    max-width: 300px;
+  }
+  .blogs .blog .date {
+    font-size: 1em;
+  }
+  .blogs .blog h4 {
+    font-size: 1.1em;
+  }
+}
 
 /*# sourceMappingURL=blogs.css.map */
