@@ -4,6 +4,7 @@
   padding-bottom: 25px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 6px;
 }
 .publication:last-child {
@@ -29,6 +30,7 @@
 }
 .publication .authors {
   display: flex;
+  flex-wrap: wrap;
   gap: 7px;
 }
 .publication .authors .author {
@@ -36,6 +38,23 @@
   border-radius: 3px;
   padding: 2px 6px;
   font-size: 0.9em;
+}
+
+@media (max-width: 800px) {
+  .publication .description {
+    font-size: 1.15em;
+  }
+  .publication .authors .author {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 580px) {
+  .publication .description {
+    font-size: 1.1em;
+  }
+  .publication .authors .author {
+    font-size: 0.75em;
+  }
 }
 
 /*# sourceMappingURL=publication.css.map */

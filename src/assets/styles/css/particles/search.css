@@ -55,6 +55,9 @@
   .page-search {
     min-width: 260px;
   }
+  .page-search input::placeholder {
+    font-size: 0.9em;
+  }
   .page-search button {
     display: none;
   }
