@@ -89,6 +89,7 @@ function Collaborations() {
 
         <br />
         <br />
+        
         <span className="description special">
           Students who are willing to continue their involvement over the next academic year are particularly encouraged to apply.
         </span>

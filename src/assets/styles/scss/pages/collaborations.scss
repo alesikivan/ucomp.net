@@ -14,7 +14,6 @@
     font-size: 1.4em;
     max-width: 900px;
 
-    // background-color: #cccccc40;
     padding: 5px 15px;
     border-radius: 5px;
   }
@@ -162,6 +161,61 @@
   
     .title-medium, .description {
       text-align: center;
+    }
+  }
+}
+
+
+
+@media (max-width: 1070px) {
+  .information {  
+    .projects {
+      justify-content: center;
+    }
+  }
+}
+
+
+
+@media (max-width: 730px) {
+  .information {  
+    .title-medium {
+      font-size: 1.2em;
+    }
+
+    .projects {
+      .project {  
+        img {
+          max-width: 50px;
+        }
+  
+        span {
+          font-size: 0.8em;
+        }
+      }
+    }
+
+    .description {
+      font-size: 0.85em;
+    }
+
+    .areas {
+      .area {
+        text-align: center;
+        font-size: 0.75em;
+      }
+    }
+  }
+
+  .information-blocks {
+    .information-block {
+      .title-medium {
+        font-size: 1em;
+      }
+
+      .description { 
+        font-size: 0.8em;
+      }
     }
   }
 }

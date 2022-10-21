@@ -151,4 +151,34 @@
   text-align: center;
 }
 
+@media (max-width: 1070px) {
+  .information .projects {
+    justify-content: center;
+  }
+}
+@media (max-width: 730px) {
+  .information .title-medium {
+    font-size: 1.2em;
+  }
+  .information .projects .project img {
+    max-width: 50px;
+  }
+  .information .projects .project span {
+    font-size: 0.8em;
+  }
+  .information .description {
+    font-size: 0.85em;
+  }
+  .information .areas .area {
+    text-align: center;
+    font-size: 0.75em;
+  }
+  .information-blocks .information-block .title-medium {
+    font-size: 1em;
+  }
+  .information-blocks .information-block .description {
+    font-size: 0.8em;
+  }
+}
+
 /*# sourceMappingURL=collaborations.css.map */
