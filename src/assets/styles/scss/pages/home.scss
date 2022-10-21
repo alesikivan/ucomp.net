@@ -235,7 +235,7 @@ main {
             a {
               min-width: 200px;
               min-height: 48px;
-              font-size: 0.8em;
+              font-size: 1em;
             }
           }
         }
@@ -283,11 +283,15 @@ main {
             margin-top: 15px;
 
             @include flex;
-            flex-wrap: wrap;
+            // flex-wrap: wrap;
 
             a {
-              font-size: 1em;
+              min-height: 42px;
+              min-width: auto;
+              width: 48%;
+              font-size: 0.85em;
             }
+
           }
         }
       }

@@ -41,7 +41,7 @@ main .home-info .cover .general-info .links a {
   min-height: 54px;
   border-radius: 8px;
   color: #0082C7;
-  border: 2px solid rgba(0, 130, 199, 0.7411764706);
+  border: 2px solid #0082c7bd;
   font-family: "Bold";
   transition: 0.5s;
   font-size: 1.1em;
@@ -110,7 +110,7 @@ main .home-blocks .home-block img {
     margin: 40px 0;
     margin-top: 10px;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.3215686275);
+    border-bottom: 1px solid #cccccc52;
   }
   main .home-info .cover .general-info {
     display: flex;
@@ -177,7 +177,7 @@ main .home-blocks .home-block img {
   main .home-info .cover .general-info .links a {
     min-width: 200px;
     min-height: 48px;
-    font-size: 0.8em;
+    font-size: 1em;
   }
   main .home-question {
     font-size: 1.5em;
@@ -207,10 +207,12 @@ main .home-blocks .home-block img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
   }
   main .home-info .cover .general-info .links a {
-    font-size: 1em;
+    min-height: 42px;
+    min-width: auto;
+    width: 48%;
+    font-size: 0.85em;
   }
   main .home-question {
     font-size: 1.3em;

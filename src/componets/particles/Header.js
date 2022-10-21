@@ -5,7 +5,7 @@ import images from '../../assets/images/imgs';
 import '../../assets/styles/css/particles/header.css';
 
 function Header() {
-  const [isMenuActive, setIsMenuActive] = useState(true)
+  const [isMenuActive, setIsMenuActive] = useState(false)
   return (
     <header className='main-header'>
       <div className='cover'>
@@ -38,19 +38,19 @@ function Header() {
         isMenuActive ? (
           <section className='burger-menu'>
             <ul>
-              <li>
+              <li onClick={() => setIsMenuActive(!isMenuActive)}>
                 <Link to="team">team</Link>
               </li>
-              <li>
+              <li onClick={() => setIsMenuActive(!isMenuActive)}>
                 <Link to="publications">publications</Link>
               </li>
-              <li>
+              <li onClick={() => setIsMenuActive(!isMenuActive)}>
                 <Link to="collaborations">collaborations</Link>
               </li>
-              <li>
+              <li onClick={() => setIsMenuActive(!isMenuActive)}>
                 <Link to="blogs">blogs</Link>
               </li>
-              <li>
+              <li onClick={() => setIsMenuActive(!isMenuActive)}>
                 <Link to="contact-us">contact us</Link>
               </li>
             </ul>

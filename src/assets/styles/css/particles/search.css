@@ -23,7 +23,7 @@
   font-size: 1em;
 }
 .page-search input::placeholder {
-  color: rgba(102, 102, 102, 0.8392156863);
+  color: #666666d6;
 }
 .page-search .clear {
   align-self: center;
