@@ -54,4 +54,11 @@
   opacity: 0.8;
 }
 
+@media (max-width: 500px) {
+  .contact-us-page .contact-us-form {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=contact-us.css.map */

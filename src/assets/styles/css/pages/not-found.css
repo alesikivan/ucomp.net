@@ -35,4 +35,20 @@ main .link-block a:hover {
   opacity: 0.8;
 }
 
+@media (max-width: 500px) {
+  main .error_message {
+    text-align: center;
+    margin-top: 70px;
+  }
+  main .error_message span {
+    font-size: 4em;
+  }
+  main .error_message p {
+    font-size: 1.5em;
+  }
+  main .link-block a {
+    font-size: 0.8em;
+  }
+}
+
 /*# sourceMappingURL=not-found.css.map */
