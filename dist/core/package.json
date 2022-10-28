@@ -1,0 +1,17 @@
+{
+  "name": "bookmark-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "coloring.js",
+  "scripts": {
+    "start": "nodemon admin.ucomp.js"
+  },
+  "author": "alesikivan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
