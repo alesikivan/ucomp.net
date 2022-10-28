@@ -24,7 +24,6 @@ function Blog() {
       axios(url)
         .then(content => {
           const { blog, next = null, previos = null } = content.data
-          console.log(content.data)
           setBlog(blog)
           setBlogNavigation({ next, previos })
         })

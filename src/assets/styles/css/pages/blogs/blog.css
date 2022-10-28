@@ -14,5 +14,17 @@
 .blog-page .content {
   width: 100%;
 }
+.blog-page .content strong {
+  font-family: "Bold";
+}
+.blog-page .content ul li {
+  list-style-type: circle;
+}
+.blog-page .content ol li, .blog-page .content ul li {
+  list-style-position: inside;
+}
+.blog-page .content a {
+  color: #0082C7;
+}
 
 /*# sourceMappingURL=blog.css.map */

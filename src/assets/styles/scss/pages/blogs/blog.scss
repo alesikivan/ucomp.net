@@ -16,5 +16,25 @@
 
   .content {
     width: 100%;
+
+    strong {
+      font-family: 'Bold';
+    }
+
+    ul {
+      li {
+        list-style-type: circle;
+      }
+    }
+
+    ol, ul {
+      li {
+        list-style-position: inside;
+      }
+    } 
+
+    a {
+      color: $appColor;
+    }
   }
 }
