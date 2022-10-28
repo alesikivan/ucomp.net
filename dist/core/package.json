@@ -4,7 +4,7 @@
   "description": "",
   "main": "coloring.js",
   "scripts": {
-    "start": "nodemon admin.ucomp.js"
+    "start": "nodemon ucomp.js"
   },
   "author": "alesikivan",
   "license": "ISC",

@@ -14,8 +14,6 @@ function Collaborations() {
   const [collaborations, setCollaborations] = useState([])
   const [preloader, setPreloader] = useState(true)
 
-  const email = 'info@ucomp.net'
-
   useEffect(() => {
     const getCollaborations = () => {
       const url = `${process.env.REACT_APP_SERVER_DATA}/collaboration/get`
