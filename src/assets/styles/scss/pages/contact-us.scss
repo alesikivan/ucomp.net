@@ -15,12 +15,12 @@
 
   .contact-us-form {
     min-width: 420px;
-    border: 1px solid $opacityLineColor;
     border-radius: 4px;
     opacity: hidden;
 
     display: flex;
     flex-direction: column;
+    gap: 6px;
 
     textarea {
       min-height: 150px;
@@ -31,11 +31,12 @@
       border: none;
       background: none;
       font-size: 1em;
+      background-color: #f2f4f6;
+      border-radius: 5px;
     }
 
     input {
       padding: 10px;
-      border-bottom: 1px solid $opacityLineColor;
       font-family: 'Bold';
     }
 
@@ -45,11 +46,11 @@
     }
 
     button {
-      border-top: 1px solid $opacityLineColor;
       padding: 10px 0;
       font-family: 'Bold';
       color: #413f42a3;
       cursor: not-allowed;
+      transition: 0.4s;
 
       &.active {
         color: $appColor;

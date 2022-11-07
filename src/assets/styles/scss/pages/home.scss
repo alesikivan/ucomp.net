@@ -3,26 +3,46 @@
 
 main {
   .home-info {
-    min-height: calc(100vh - 75px);
+    // min-height: calc(100vh - 75px);
+    margin-top: 20px;
 
     @include flex;
 
     .cover {
       display: flex;
       gap: 20px;
-  
+
+      border-radius: 10px;
+      padding: 45px;
+      background-color: $appColor;
+      
+      @include flex-column;
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        z-index: -1;
+        border-radius: 10px;
+        background-color: $appColor;
+        background-image: url('/src/assets/images/pages/home/background.jpeg');
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #0082c7bd;
+        filter: blur(1px);
+      }
+
       .general-info {
         gap: 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        @include flex-column;
   
         .description {
           font-size: 0.9em;
         }
   
         .title {
-          color: $appColor;
+          // color: $appColor;
           font-size: 4.2em;
           font-family: 'Super-Bold';
           text-transform: uppercase;
@@ -35,17 +55,23 @@ main {
         .about {
           font-size: 1.2em;
         }
+        
+        .title, .description, .about {
+          color: #fff;
+          text-align: center;
+        }
+
   
         .links {
           display: flex;
           gap: 20px;
   
           a {
-            min-width: 235px;
-            min-height: 54px;
+            min-width: 200px;
+            min-height: 48px;
             border-radius: 8px;
-            color: $appColor;
-            border: 2px solid #0082c7bd;
+            color: #fff;
+            border: 2px solid #fff;
             font-family: 'Bold';
             transition: 0.5s;
             font-size: 1.1em;
@@ -53,13 +79,18 @@ main {
             @include flex;
 
             &.active {
-              background-color: $appColor;
-              color: #fff;
+              background-color: #fff;
+              color: $appColor;
             }
   
             &:hover {
               opacity: 0.7;
             }
+
+            // &:first-child {
+            //   background-color: #fff;
+            //   color: $appColor;
+            // }
           }
         }
       }
@@ -69,7 +100,8 @@ main {
           height: auto;
           max-width: 600px;
           border-radius: 15px;
-          box-shadow: 6px 6px 7px #e4e3e3;
+          // box-shadow: 6px 6px 7px #e4e3e3;
+          border: 2px solid #fff;
         }
       }
     }
@@ -142,6 +174,10 @@ main {
             font-size: 1.1em;
           }
 
+          .title, .description, .about {
+            color: #fff;
+          }
+
           .links {
             width: 100%;
             margin-top: 15px;
@@ -152,6 +188,13 @@ main {
               min-width: 220px;
               min-height: 48px;
               font-size: 1em;
+              border-color: #fff;
+              color: #fff;
+
+              &.active {
+                background-color: #fff;
+                color: $appColor;
+              }
             }
           }
         }
@@ -268,7 +311,9 @@ main {
 @media (max-width: 500px) {
   main {
     .home-info {  
-      .cover {    
+      .cover {  
+        padding: 20px;
+
         .general-info {
           .description {
             font-size: 0.8em;

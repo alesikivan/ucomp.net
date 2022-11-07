@@ -1,14 +1,15 @@
 @import '../utils/variables.scss';
 
 .page-search {
-  border: 1px solid #ccc;
+  // border: 1px solid #cad3dc;
   border-radius: 5px;
   margin: 0 auto;
   max-width: 350px;
   min-height: 40px;
   overflow: hidden;
-  padding: 0 4px;
+  padding: 1px 4px;
   min-width: 360px;
+  background-color: #f2f4f6;
 
   display: flex;
   gap: 5px;
@@ -21,9 +22,9 @@
     background-repeat: no-repeat;
     background-size: 19px;
     background-position: left;
-    font-family: 'Bold';
     background-position-x: 6px;
-    font-size: 1em;
+    font-size: 15px;
+    background-color: inherit;
 
     &::placeholder {
       color: #666666d6;
@@ -54,6 +55,7 @@
     font-size: 1em;
     font-family: 'Bold';
     transition: 0.4s;
+    color: #444444b3;
 
     &:hover {
       color: $appColor;

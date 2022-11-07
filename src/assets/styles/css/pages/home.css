@@ -1,5 +1,5 @@
 main .home-info {
-  min-height: calc(100vh - 75px);
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -8,18 +8,41 @@ main .home-info {
 main .home-info .cover {
   display: flex;
   gap: 20px;
+  border-radius: 10px;
+  padding: 45px;
+  background-color: #0082C7;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+main .home-info .cover::before {
+  content: "";
+  z-index: -1;
+  border-radius: 10px;
+  background-color: #0082C7;
+  background-image: url("/src/assets/images/pages/home/background.jpeg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #0082c7bd;
+  filter: blur(1px);
 }
 main .home-info .cover .general-info {
   gap: 15px;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
 }
 main .home-info .cover .general-info .description {
   font-size: 0.9em;
 }
 main .home-info .cover .general-info .title {
-  color: #0082C7;
   font-size: 4.2em;
   font-family: "Super-Bold";
   text-transform: uppercase;
@@ -32,16 +55,20 @@ main .home-info .cover .general-info .title {
 main .home-info .cover .general-info .about {
   font-size: 1.2em;
 }
+main .home-info .cover .general-info .title, main .home-info .cover .general-info .description, main .home-info .cover .general-info .about {
+  color: #fff;
+  text-align: center;
+}
 main .home-info .cover .general-info .links {
   display: flex;
   gap: 20px;
 }
 main .home-info .cover .general-info .links a {
-  min-width: 235px;
-  min-height: 54px;
+  min-width: 200px;
+  min-height: 48px;
   border-radius: 8px;
-  color: #0082C7;
-  border: 2px solid #0082c7bd;
+  color: #fff;
+  border: 2px solid #fff;
   font-family: "Bold";
   transition: 0.5s;
   font-size: 1.1em;
@@ -51,8 +78,8 @@ main .home-info .cover .general-info .links a {
   justify-content: center;
 }
 main .home-info .cover .general-info .links a.active {
-  background-color: #0082C7;
-  color: #fff;
+  background-color: #fff;
+  color: #0082C7;
 }
 main .home-info .cover .general-info .links a:hover {
   opacity: 0.7;
@@ -61,7 +88,7 @@ main .home-info .cover .info-image img {
   height: auto;
   max-width: 600px;
   border-radius: 15px;
-  box-shadow: 6px 6px 7px #e4e3e3;
+  border: 2px solid #fff;
 }
 main .home-question {
   text-align: center;
@@ -123,6 +150,9 @@ main .home-blocks .home-block img {
   main .home-info .cover .general-info .description {
     font-size: 1.1em;
   }
+  main .home-info .cover .general-info .title, main .home-info .cover .general-info .description, main .home-info .cover .general-info .about {
+    color: #fff;
+  }
   main .home-info .cover .general-info .links {
     width: 100%;
     margin-top: 15px;
@@ -135,6 +165,12 @@ main .home-blocks .home-block img {
     min-width: 220px;
     min-height: 48px;
     font-size: 1em;
+    border-color: #fff;
+    color: #fff;
+  }
+  main .home-info .cover .general-info .links a.active {
+    background-color: #fff;
+    color: #0082C7;
   }
   main .home-info .cover .info-image img {
     display: none;
@@ -194,6 +230,9 @@ main .home-blocks .home-block img {
   }
 }
 @media (max-width: 500px) {
+  main .home-info .cover {
+    padding: 20px;
+  }
   main .home-info .cover .general-info .description {
     font-size: 0.8em;
   }

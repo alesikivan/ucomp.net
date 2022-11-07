@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { LazyLoadImage } from "react-lazy-load-image-component"
+// import { LazyLoadImage } from "react-lazy-load-image-component"
 
 import imgs from "../../assets/images/imgs"
 import '../../assets/styles/css/pages/home.css'
@@ -23,17 +23,17 @@ function Home() {
             </h3>
             
             <div className="links">
-              <Link to='publications' className="active">Publications</Link>
+              <Link to='publications'>Publications</Link>
               <Link to='team'>Team members</Link>
             </div>
           </div>
-          <div className="info-image">
+          {/* <div className="info-image">
             <LazyLoadImage 
               src={imgs.city}
               effect="blur"
               placeholderSrc={imgs.cityCompressed}
               alt="city"/>
-          </div>
+          </div> */}
         </div>
       </article>
 

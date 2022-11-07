@@ -1,6 +1,6 @@
 import city from '../images/pages/home/city.svg'
 import cityCompressed from '../images/pages/home/cityCompressed.jpeg'
-import logo from '../images/common/logo.svg'
+import logo from '../images/common/logo2.svg'
 
 import support from '../images/pages/home/support.svg'
 import smartCity from '../images/pages/home/smartCity.svg'
