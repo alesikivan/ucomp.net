@@ -65,7 +65,8 @@
 
 @media (max-width: 490px) {
   .page-search {
-    min-width: 260px;
+    min-width: calc(100% - 8px);
+    max-width: calc(100% - 8px);
 
     input {
       &::placeholder {

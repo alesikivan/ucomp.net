@@ -112,5 +112,11 @@
     color: #0082C7;
   }
 }
+@media (max-width: 490px) {
+  .main-header {
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+  }
+}
 
 /*# sourceMappingURL=header.css.map */

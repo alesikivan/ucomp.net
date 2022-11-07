@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a777eaa.css",
-    "main.js": "/static/js/main.cf723def.js",
+    "main.css": "/static/css/main.974f9b97.css",
+    "main.js": "/static/js/main.bca86a76.js",
     "static/media/city.svg": "/static/media/city.ee5666eda45cd46665da536ecec5405c.svg",
     "static/media/cityCompressed.jpeg": "/static/media/cityCompressed.45ed5c38bd1d4f650e64.jpeg",
     "static/media/Montserrat-SemiBold.ttf": "/static/media/Montserrat-SemiBold.d5e0cc788cba9ced1fb9.ttf",
     "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.2c155811b35513d5beaa.ttf",
     "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.6fcc9263a21be961d246.ttf",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/logo2.svg": "/static/media/logo2.33117389bd9b45bc001e17190b731180.svg",
     "static/media/team.svg": "/static/media/team.931aff0dd66dc81e78714338144eaf4c.svg",
+    "static/media/background.jpeg": "/static/media/background.083a478c13bacef1d7b6.jpeg",
     "static/media/phone.svg": "/static/media/phone.7c0e09efcf7337d97b480b490618d52f.svg",
     "static/media/success.svg": "/static/media/success.5d03147cb02802a9a442bc6ec3957f05.svg",
     "static/media/search.svg": "/static/media/search.215c892212ae6ddd3838.svg",
@@ -20,18 +22,17 @@
     "static/media/arrow.svg": "/static/media/arrow.b0ef057ca01212d1aabfd7494e36a3ce.svg",
     "static/media/car.svg": "/static/media/car.78ddad570683f6e070ebf6110725487d.svg",
     "static/media/taxi.svg": "/static/media/taxi.d56ef6a22e9394bd9ace36d771ad1c86.svg",
-    "static/media/logo.svg": "/static/media/logo.566742f0ffd5fcf4407baac1dda0ee65.svg",
     "static/media/study.svg": "/static/media/study.68ee1b024f7fd11eaf4e08c3e6af401b.svg",
     "static/media/smartCity.svg": "/static/media/smartCity.01788bae209261a3d753bab0754c5113.svg",
     "static/media/menu.svg": "/static/media/menu.71195ffb8cbb226a2b319496d0d02181.svg",
     "static/media/papers.svg": "/static/media/papers.b9b27abb4ea425d391275be812cbcf2e.svg",
     "static/media/close.svg": "/static/media/close.0f6da0159648cab1fa27ff51ffead72a.svg",
     "index.html": "/index.html",
-    "main.6a777eaa.css.map": "/static/css/main.6a777eaa.css.map",
-    "main.cf723def.js.map": "/static/js/main.cf723def.js.map"
+    "main.974f9b97.css.map": "/static/css/main.974f9b97.css.map",
+    "main.bca86a76.js.map": "/static/js/main.bca86a76.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a777eaa.css",
-    "static/js/main.cf723def.js"
+    "static/css/main.974f9b97.css",
+    "static/js/main.bca86a76.js"
   ]
 }
