@@ -13,12 +13,10 @@ function Footer() {
 
   return (
     <footer className='main-footer'>
-      <section className='cover'>
-        <article className='info'>
-          <h3>urban complexity lab</h3>
-          <span className='description'>
-            Built using React by <b>SOCOS Team</b> &copy;{year}
-          </span>
+
+      <article className='cover'>
+        <section className='info'>
+          <h4>urban complexity lab</h4>
           <ul>
             <li>
               <a href={`mailto:${email}`}>
@@ -39,12 +37,20 @@ function Footer() {
               </a>
             </li>
           </ul>
-        </article> 
+        </section> 
+      </article>
+            
+      <article className='map'>
+        <GoogleMap />
+      </article> 
+      
+      <hr />
 
-        <article className='map'>
-          <GoogleMap />
-        </article> 
-      </section>
+      <article>
+        <span className='description'>
+          Built using React by <span className='line'>SOCOS Team</span> &copy;{year}
+        </span>
+      </article>
     </footer>
   );
 }

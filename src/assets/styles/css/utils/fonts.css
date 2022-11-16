@@ -11,6 +11,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "Medium";
+  src: url("../../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Bold";
   src: url("../../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
   font-weight: normal;

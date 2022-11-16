@@ -11,12 +11,12 @@
 }
 .main-header .cover {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1350px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1350px) {
   .main-header .cover {
     min-width: auto;
   }
@@ -33,10 +33,11 @@
   list-style-type: none;
 }
 .main-header .cover ul li a {
-  color: #413f42db;
+  color: #141314fa;
   user-select: none;
   text-transform: capitalize;
-  font-family: "Bold";
+  font-family: "Medium";
+  color: #444;
 }
 .main-header .cover ul li a:hover {
   color: #0082C7;
@@ -102,7 +103,7 @@
     list-style-type: none;
   }
   .main-header .burger-menu ul li a {
-    color: #413f42db;
+    color: #141314fa;
     user-select: none;
     text-transform: capitalize;
     font-family: "Bold";

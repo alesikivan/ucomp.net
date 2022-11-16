@@ -43,7 +43,8 @@
           color: $textColor;
           user-select: none;
           text-transform: capitalize;
-          font-family: 'Bold';
+          font-family: 'Medium';
+          color: #444;
   
           &:hover {
             color: $appColor;
