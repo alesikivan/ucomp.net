@@ -6,8 +6,6 @@ main .home-info {
   justify-content: center;
 }
 main .home-info .cover {
-  display: flex;
-  gap: 20px;
   border-radius: 10px;
   padding: 45px;
   background-color: #0082C7;
@@ -16,6 +14,7 @@ main .home-info .cover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 20px;
   position: relative;
   z-index: 1;
 }
@@ -28,7 +27,7 @@ main .home-info .cover::before {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #0082c7bd;
+  background-color: rgba(0, 130, 199, 0.7411764706);
   filter: blur(1px);
 }
 main .home-info .cover .general-info {
@@ -137,7 +136,7 @@ main .home-blocks .home-block img {
     margin: 40px 0;
     margin-top: 10px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #cccccc52;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3215686275);
   }
   main .home-info .cover .general-info {
     display: flex;
