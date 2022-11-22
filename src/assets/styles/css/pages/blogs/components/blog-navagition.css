@@ -12,7 +12,7 @@
   cursor: pointer;
   border-radius: 5px;
   color: #0082C7;
-  background-color: #0082c70f;
+  background-color: rgba(0, 130, 199, 0.0588235294);
   transition: 0.3s;
   user-select: none;
 }
@@ -34,7 +34,7 @@
   transform: rotate(180deg);
 }
 .blog-navigation .navigation-item:hover {
-  background-color: #0082c726;
+  background-color: rgba(0, 130, 199, 0.1490196078);
 }
 
 /*# sourceMappingURL=blog-navagition.css.map */
