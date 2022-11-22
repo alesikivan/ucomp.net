@@ -1,7 +1,7 @@
 .blog {
   width: 400px;
   padding: 20px;
-  box-shadow: -3px -3px 7px rgba(228, 227, 227, 0.5019607843), 3px 3px 7px rgba(168, 174, 180, 0.4705882353);
+  box-shadow: -3px -3px 7px #e4e3e380, 3px 3px 7px #a8aeb478;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
@@ -14,7 +14,7 @@
   gap: 12px;
 }
 .blog:hover {
-  background-color: rgba(204, 204, 204, 0.2);
+  background-color: #cccccc33;
 }
 .blog img {
   height: auto;

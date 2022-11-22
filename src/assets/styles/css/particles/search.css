@@ -23,7 +23,7 @@
   background-color: inherit;
 }
 .page-search input::placeholder {
-  color: rgba(102, 102, 102, 0.8392156863);
+  color: #666666d6;
 }
 .page-search .clear {
   align-self: center;
@@ -46,7 +46,7 @@
   font-size: 1em;
   font-family: "Bold";
   transition: 0.4s;
-  color: rgba(68, 68, 68, 0.7019607843);
+  color: #444444b3;
 }
 .page-search button:hover {
   color: #0082C7;

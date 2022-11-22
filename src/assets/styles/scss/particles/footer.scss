@@ -51,7 +51,7 @@
             }
   
             span {
-              font-size: 1.3em;
+              font-size: 1.1em;
               transition: 0.4s;
 
               &:hover {
@@ -93,7 +93,7 @@
 }
 
 
-@media (max-width: 1050px) {
+@media (max-width: 1115px) {
   .main-footer {
     .cover {
       justify-content: center;
@@ -139,6 +139,7 @@
 @media (max-width: 640px) {
   .main-footer {
     padding: 10px 40px;
+    padding-bottom: 20px;
     
     .cover {
       .info {

@@ -27,7 +27,7 @@ main .home-info .cover::before {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 130, 199, 0.7411764706);
+  background-color: #0082c7bd;
   filter: blur(1px);
 }
 main .home-info .cover .general-info {
@@ -136,7 +136,7 @@ main .home-blocks .home-block img {
     margin: 40px 0;
     margin-top: 10px;
     padding-bottom: 40px;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.3215686275);
+    border-bottom: 1px solid #cccccc52;
   }
   main .home-info .cover .general-info {
     display: flex;

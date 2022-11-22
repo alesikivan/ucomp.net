@@ -111,7 +111,7 @@
 .information-blocks .information-block .title-medium .toggle-info {
   height: 19px;
   width: 19px;
-  background: rgba(0, 130, 199, 0.6784313725);
+  background: #0082c7ad;
   border-radius: 50%;
   border: none;
   font-family: "Bold";
@@ -173,6 +173,7 @@
     text-align: center;
     font-size: 0.75em;
   }
+
   .information-blocks .information-block .title-medium {
     font-size: 1em;
   }

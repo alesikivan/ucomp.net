@@ -1,7 +1,7 @@
 .main-footer {
   margin-top: 50px;
   padding: 30px 100px;
-  background: linear-gradient(to bottom right, rgb(2, 79, 126) 40%, rgba(10, 100, 130, 0.8588235294));
+  background: linear-gradient(to bottom right, #024f7e 40%, #0a6482db);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -25,7 +25,7 @@
   gap: 15px;
 }
 .main-footer .cover .info h4 {
-  color: rgba(255, 255, 255, 0.9098039216);
+  color: #ffffffe8;
   font-size: 1.7em;
   text-transform: uppercase;
 }
@@ -54,7 +54,7 @@
   max-width: 40px;
 }
 .main-footer .cover .info ul li a span {
-  font-size: 1.3em;
+  font-size: 1.1em;
   transition: 0.4s;
 }
 .main-footer .cover .info ul li a span:hover {
@@ -72,18 +72,18 @@
   height: 1px;
   width: 100%;
   max-width: 1350px;
-  background-color: rgba(255, 255, 255, 0.337254902);
+  background-color: #ffffff56;
 }
 .main-footer .description {
   text-align: center;
   font-size: 1.1em;
-  color: rgba(255, 255, 255, 0.9098039216);
+  color: #ffffffe8;
 }
 .main-footer .description .line {
   color: #fff;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1115px) {
   .main-footer .cover {
     justify-content: center;
   }
@@ -112,6 +112,7 @@
   .main-footer .description {
     font-size: 0.9em;
   }
+
   .description {
     text-align: center;
   }
@@ -119,6 +120,7 @@
 @media (max-width: 640px) {
   .main-footer {
     padding: 10px 40px;
+    padding-bottom: 20px;
   }
   .main-footer .cover .info h4 {
     font-size: 1.3em;

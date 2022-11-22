@@ -42,7 +42,7 @@
 .contact-us-page .contact-us-form button {
   padding: 10px 0;
   font-family: "Bold";
-  color: rgba(65, 63, 66, 0.6392156863);
+  color: #413f42a3;
   cursor: not-allowed;
   transition: 0.4s;
 }
