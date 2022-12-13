@@ -21,7 +21,7 @@ body,
 }
 
 .container {
-  max-width: 1200px !important;
+  max-width: 1350px !important;
   width: calc(100% - 80px);
   min-height: 100vh;
   margin: 0 auto;
